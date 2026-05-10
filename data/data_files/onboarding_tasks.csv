@@ -1,0 +1,41 @@
+task_id,category,description,due_day,assigned_to
+T001,Pre-boarding,Submit signed employment contract,3,new_hire
+T002,Pre-boarding,Complete ID verification documents,3,new_hire
+T003,Pre-boarding,Set up company email account,1,new_hire
+T004,Pre-boarding,Complete pre-boarding welcome survey,5,new_hire
+T005,Pre-boarding,Send welcome message to new hire,-2,manager
+T006,Pre-boarding,Assign buddy to new hire,-1,manager
+T007,Pre-boarding,Prepare workstation and access credentials,1,manager
+T008,Week 1,Attend Day 1 induction session,1,new_hire
+T009,Week 1,Set up laptop and IT accounts,2,new_hire
+T010,Week 1,Meet with buddy for orientation coffee,3,new_hire
+T011,Week 1,Watch culture and values intro video,5,new_hire
+T012,Week 1,Complete IT security and data privacy training,7,new_hire
+T013,Week 1,Review company handbook and HR policies,7,new_hire
+T014,Week 1,Complete company policy acknowledgement,5,new_hire
+T015,Week 1,Schedule first 1-on-1 with manager,3,new_hire
+T016,Week 1,Conduct Day 1 welcome meeting with new hire,1,manager
+T017,Week 1,Introduce new hire to the team,2,manager
+T018,Week 1,Confirm access and tools are working,3,manager
+T019,Month 1,Complete benefits enrolment form,21,new_hire
+T020,Month 1,Shadow a colleague for role familiarisation,14,new_hire
+T021,Month 1,Complete first assigned project or task brief,21,new_hire
+T022,Month 1,Attend first team meeting,10,new_hire
+T023,Month 1,Complete 30-day check-in survey,30,new_hire
+T024,Month 1,Schedule 30-day review meeting with manager,28,new_hire
+T025,Month 1,Conduct 30-day role clarity conversation,30,manager
+T026,Month 1,Submit 30-day review form to HR,30,manager
+T027,Month 1,Check in with buddy on new hire progress,21,manager
+T028,Month 2,Present first piece of work to team,45,new_hire
+T029,Month 2,Complete e-learning module for role skills,50,new_hire
+T030,Month 2,Identify one improvement or initiative idea,55,new_hire
+T031,Month 2,Complete 60-day check-in survey,60,new_hire
+T032,Month 2,Attend cross-functional team meeting,45,new_hire
+T033,Month 2,Conduct 60-day progress review,60,manager
+T034,Month 2,Discuss development goals with new hire,55,manager
+T035,Month 3,Lead or own a work deliverable independently,75,new_hire
+T036,Month 3,Complete 90-day check-in survey,90,new_hire
+T037,Month 3,Prepare 90-day self-reflection summary,88,new_hire
+T038,Month 3,Complete final onboarding feedback form,90,new_hire
+T039,Month 3,Conduct 90-day review and sign-off,90,manager
+T040,Month 3,Submit onboarding completion report to HR,90,manager

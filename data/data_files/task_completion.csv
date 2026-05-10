@@ -1,0 +1,1001 @@
+hire_id,task_id,category,due_day,due_date,assigned_to,status,completion_date
+NH001,T001,Pre-boarding,3,2026-05-27,new_hire,complete,2026-05-10
+NH001,T002,Pre-boarding,3,2026-05-27,new_hire,pending,
+NH001,T003,Pre-boarding,1,2026-05-25,new_hire,complete,2026-05-10
+NH001,T004,Pre-boarding,5,2026-05-29,new_hire,complete,2026-05-10
+NH001,T005,Pre-boarding,-2,2026-05-22,manager,pending,
+NH001,T006,Pre-boarding,-1,2026-05-23,manager,pending,
+NH001,T007,Pre-boarding,1,2026-05-25,manager,complete,2026-05-10
+NH001,T008,Week 1,1,2026-05-25,new_hire,complete,2026-05-10
+NH001,T009,Week 1,2,2026-05-26,new_hire,complete,2026-05-10
+NH001,T010,Week 1,3,2026-05-27,new_hire,pending,
+NH001,T011,Week 1,5,2026-05-29,new_hire,complete,2026-05-10
+NH001,T012,Week 1,7,2026-05-31,new_hire,upcoming,
+NH001,T013,Week 1,7,2026-05-31,new_hire,upcoming,
+NH001,T014,Week 1,5,2026-05-29,new_hire,complete,2026-05-10
+NH001,T015,Week 1,3,2026-05-27,new_hire,complete,2026-05-10
+NH001,T016,Week 1,1,2026-05-25,manager,complete,2026-05-10
+NH001,T017,Week 1,2,2026-05-26,manager,complete,2026-05-10
+NH001,T018,Week 1,3,2026-05-27,manager,complete,2026-05-10
+NH001,T019,Month 1,21,2026-06-14,new_hire,upcoming,
+NH001,T020,Month 1,14,2026-06-07,new_hire,upcoming,
+NH001,T021,Month 1,21,2026-06-14,new_hire,upcoming,
+NH001,T022,Month 1,10,2026-06-03,new_hire,upcoming,
+NH001,T023,Month 1,30,2026-06-23,new_hire,upcoming,
+NH001,T024,Month 1,28,2026-06-21,new_hire,upcoming,
+NH001,T025,Month 1,30,2026-06-23,manager,upcoming,
+NH001,T026,Month 1,30,2026-06-23,manager,upcoming,
+NH001,T027,Month 1,21,2026-06-14,manager,upcoming,
+NH001,T028,Month 2,45,2026-07-08,new_hire,upcoming,
+NH001,T029,Month 2,50,2026-07-13,new_hire,upcoming,
+NH001,T030,Month 2,55,2026-07-18,new_hire,upcoming,
+NH001,T031,Month 2,60,2026-07-23,new_hire,upcoming,
+NH001,T032,Month 2,45,2026-07-08,new_hire,upcoming,
+NH001,T033,Month 2,60,2026-07-23,manager,upcoming,
+NH001,T034,Month 2,55,2026-07-18,manager,upcoming,
+NH001,T035,Month 3,75,2026-08-07,new_hire,upcoming,
+NH001,T036,Month 3,90,2026-08-22,new_hire,upcoming,
+NH001,T037,Month 3,88,2026-08-20,new_hire,upcoming,
+NH001,T038,Month 3,90,2026-08-22,new_hire,upcoming,
+NH001,T039,Month 3,90,2026-08-22,manager,upcoming,
+NH001,T040,Month 3,90,2026-08-22,manager,upcoming,
+NH002,T001,Pre-boarding,3,2026-05-19,new_hire,complete,2026-05-10
+NH002,T002,Pre-boarding,3,2026-05-19,new_hire,pending,
+NH002,T003,Pre-boarding,1,2026-05-17,new_hire,complete,2026-05-10
+NH002,T004,Pre-boarding,5,2026-05-21,new_hire,pending,
+NH002,T005,Pre-boarding,-2,2026-05-14,manager,complete,2026-05-10
+NH002,T006,Pre-boarding,-1,2026-05-15,manager,complete,2026-05-10
+NH002,T007,Pre-boarding,1,2026-05-17,manager,pending,
+NH002,T008,Week 1,1,2026-05-17,new_hire,complete,2026-05-10
+NH002,T009,Week 1,2,2026-05-18,new_hire,complete,2026-05-10
+NH002,T010,Week 1,3,2026-05-19,new_hire,complete,2026-05-10
+NH002,T011,Week 1,5,2026-05-21,new_hire,complete,2026-05-10
+NH002,T012,Week 1,7,2026-05-23,new_hire,upcoming,
+NH002,T013,Week 1,7,2026-05-23,new_hire,upcoming,
+NH002,T014,Week 1,5,2026-05-21,new_hire,complete,2026-05-10
+NH002,T015,Week 1,3,2026-05-19,new_hire,complete,2026-05-10
+NH002,T016,Week 1,1,2026-05-17,manager,complete,2026-05-10
+NH002,T017,Week 1,2,2026-05-18,manager,complete,2026-05-10
+NH002,T018,Week 1,3,2026-05-19,manager,pending,
+NH002,T019,Month 1,21,2026-06-06,new_hire,upcoming,
+NH002,T020,Month 1,14,2026-05-30,new_hire,upcoming,
+NH002,T021,Month 1,21,2026-06-06,new_hire,upcoming,
+NH002,T022,Month 1,10,2026-05-26,new_hire,upcoming,
+NH002,T023,Month 1,30,2026-06-15,new_hire,upcoming,
+NH002,T024,Month 1,28,2026-06-13,new_hire,upcoming,
+NH002,T025,Month 1,30,2026-06-15,manager,upcoming,
+NH002,T026,Month 1,30,2026-06-15,manager,upcoming,
+NH002,T027,Month 1,21,2026-06-06,manager,upcoming,
+NH002,T028,Month 2,45,2026-06-30,new_hire,upcoming,
+NH002,T029,Month 2,50,2026-07-05,new_hire,upcoming,
+NH002,T030,Month 2,55,2026-07-10,new_hire,upcoming,
+NH002,T031,Month 2,60,2026-07-15,new_hire,upcoming,
+NH002,T032,Month 2,45,2026-06-30,new_hire,upcoming,
+NH002,T033,Month 2,60,2026-07-15,manager,upcoming,
+NH002,T034,Month 2,55,2026-07-10,manager,upcoming,
+NH002,T035,Month 3,75,2026-07-30,new_hire,upcoming,
+NH002,T036,Month 3,90,2026-08-14,new_hire,upcoming,
+NH002,T037,Month 3,88,2026-08-12,new_hire,upcoming,
+NH002,T038,Month 3,90,2026-08-14,new_hire,upcoming,
+NH002,T039,Month 3,90,2026-08-14,manager,upcoming,
+NH002,T040,Month 3,90,2026-08-14,manager,upcoming,
+NH003,T001,Pre-boarding,3,2026-05-26,new_hire,pending,
+NH003,T002,Pre-boarding,3,2026-05-26,new_hire,complete,2026-05-10
+NH003,T003,Pre-boarding,1,2026-05-24,new_hire,complete,2026-05-10
+NH003,T004,Pre-boarding,5,2026-05-28,new_hire,complete,2026-05-10
+NH003,T005,Pre-boarding,-2,2026-05-21,manager,pending,
+NH003,T006,Pre-boarding,-1,2026-05-22,manager,complete,2026-05-10
+NH003,T007,Pre-boarding,1,2026-05-24,manager,pending,
+NH003,T008,Week 1,1,2026-05-24,new_hire,complete,2026-05-10
+NH003,T009,Week 1,2,2026-05-25,new_hire,pending,
+NH003,T010,Week 1,3,2026-05-26,new_hire,complete,2026-05-10
+NH003,T011,Week 1,5,2026-05-28,new_hire,complete,2026-05-10
+NH003,T012,Week 1,7,2026-05-30,new_hire,upcoming,
+NH003,T013,Week 1,7,2026-05-30,new_hire,upcoming,
+NH003,T014,Week 1,5,2026-05-28,new_hire,complete,2026-05-10
+NH003,T015,Week 1,3,2026-05-26,new_hire,complete,2026-05-10
+NH003,T016,Week 1,1,2026-05-24,manager,pending,
+NH003,T017,Week 1,2,2026-05-25,manager,pending,
+NH003,T018,Week 1,3,2026-05-26,manager,pending,
+NH003,T019,Month 1,21,2026-06-13,new_hire,upcoming,
+NH003,T020,Month 1,14,2026-06-06,new_hire,upcoming,
+NH003,T021,Month 1,21,2026-06-13,new_hire,upcoming,
+NH003,T022,Month 1,10,2026-06-02,new_hire,upcoming,
+NH003,T023,Month 1,30,2026-06-22,new_hire,upcoming,
+NH003,T024,Month 1,28,2026-06-20,new_hire,upcoming,
+NH003,T025,Month 1,30,2026-06-22,manager,upcoming,
+NH003,T026,Month 1,30,2026-06-22,manager,upcoming,
+NH003,T027,Month 1,21,2026-06-13,manager,upcoming,
+NH003,T028,Month 2,45,2026-07-07,new_hire,upcoming,
+NH003,T029,Month 2,50,2026-07-12,new_hire,upcoming,
+NH003,T030,Month 2,55,2026-07-17,new_hire,upcoming,
+NH003,T031,Month 2,60,2026-07-22,new_hire,upcoming,
+NH003,T032,Month 2,45,2026-07-07,new_hire,upcoming,
+NH003,T033,Month 2,60,2026-07-22,manager,upcoming,
+NH003,T034,Month 2,55,2026-07-17,manager,upcoming,
+NH003,T035,Month 3,75,2026-08-06,new_hire,upcoming,
+NH003,T036,Month 3,90,2026-08-21,new_hire,upcoming,
+NH003,T037,Month 3,88,2026-08-19,new_hire,upcoming,
+NH003,T038,Month 3,90,2026-08-21,new_hire,upcoming,
+NH003,T039,Month 3,90,2026-08-21,manager,upcoming,
+NH003,T040,Month 3,90,2026-08-21,manager,upcoming,
+NH004,T001,Pre-boarding,3,2026-05-12,new_hire,complete,2026-05-10
+NH004,T002,Pre-boarding,3,2026-05-12,new_hire,pending,
+NH004,T003,Pre-boarding,1,2026-05-10,new_hire,overdue,
+NH004,T004,Pre-boarding,5,2026-05-14,new_hire,pending,
+NH004,T005,Pre-boarding,-2,2026-05-07,manager,complete,2026-05-05
+NH004,T006,Pre-boarding,-1,2026-05-08,manager,complete,2026-05-10
+NH004,T007,Pre-boarding,1,2026-05-10,manager,overdue,
+NH004,T008,Week 1,1,2026-05-10,new_hire,complete,2026-05-10
+NH004,T009,Week 1,2,2026-05-11,new_hire,pending,
+NH004,T010,Week 1,3,2026-05-12,new_hire,pending,
+NH004,T011,Week 1,5,2026-05-14,new_hire,complete,2026-05-10
+NH004,T012,Week 1,7,2026-05-16,new_hire,upcoming,
+NH004,T013,Week 1,7,2026-05-16,new_hire,upcoming,
+NH004,T014,Week 1,5,2026-05-14,new_hire,complete,2026-05-10
+NH004,T015,Week 1,3,2026-05-12,new_hire,pending,
+NH004,T016,Week 1,1,2026-05-10,manager,complete,2026-05-10
+NH004,T017,Week 1,2,2026-05-11,manager,pending,
+NH004,T018,Week 1,3,2026-05-12,manager,complete,2026-05-10
+NH004,T019,Month 1,21,2026-05-30,new_hire,upcoming,
+NH004,T020,Month 1,14,2026-05-23,new_hire,upcoming,
+NH004,T021,Month 1,21,2026-05-30,new_hire,upcoming,
+NH004,T022,Month 1,10,2026-05-19,new_hire,upcoming,
+NH004,T023,Month 1,30,2026-06-08,new_hire,upcoming,
+NH004,T024,Month 1,28,2026-06-06,new_hire,upcoming,
+NH004,T025,Month 1,30,2026-06-08,manager,upcoming,
+NH004,T026,Month 1,30,2026-06-08,manager,upcoming,
+NH004,T027,Month 1,21,2026-05-30,manager,upcoming,
+NH004,T028,Month 2,45,2026-06-23,new_hire,upcoming,
+NH004,T029,Month 2,50,2026-06-28,new_hire,upcoming,
+NH004,T030,Month 2,55,2026-07-03,new_hire,upcoming,
+NH004,T031,Month 2,60,2026-07-08,new_hire,upcoming,
+NH004,T032,Month 2,45,2026-06-23,new_hire,upcoming,
+NH004,T033,Month 2,60,2026-07-08,manager,upcoming,
+NH004,T034,Month 2,55,2026-07-03,manager,upcoming,
+NH004,T035,Month 3,75,2026-07-23,new_hire,upcoming,
+NH004,T036,Month 3,90,2026-08-07,new_hire,upcoming,
+NH004,T037,Month 3,88,2026-08-05,new_hire,upcoming,
+NH004,T038,Month 3,90,2026-08-07,new_hire,upcoming,
+NH004,T039,Month 3,90,2026-08-07,manager,upcoming,
+NH004,T040,Month 3,90,2026-08-07,manager,upcoming,
+NH005,T001,Pre-boarding,3,2026-05-09,new_hire,overdue,
+NH005,T002,Pre-boarding,3,2026-05-09,new_hire,overdue,
+NH005,T003,Pre-boarding,1,2026-05-07,new_hire,overdue,
+NH005,T004,Pre-boarding,5,2026-05-11,new_hire,pending,
+NH005,T005,Pre-boarding,-2,2026-05-04,manager,overdue,
+NH005,T006,Pre-boarding,-1,2026-05-05,manager,overdue,
+NH005,T007,Pre-boarding,1,2026-05-07,manager,complete,2026-05-09
+NH005,T008,Week 1,1,2026-05-07,new_hire,overdue,
+NH005,T009,Week 1,2,2026-05-08,new_hire,complete,2026-05-06
+NH005,T010,Week 1,3,2026-05-09,new_hire,complete,2026-05-10
+NH005,T011,Week 1,5,2026-05-11,new_hire,pending,
+NH005,T012,Week 1,7,2026-05-13,new_hire,pending,
+NH005,T013,Week 1,7,2026-05-13,new_hire,complete,2026-05-10
+NH005,T014,Week 1,5,2026-05-11,new_hire,pending,
+NH005,T015,Week 1,3,2026-05-09,new_hire,complete,2026-05-07
+NH005,T016,Week 1,1,2026-05-07,manager,overdue,
+NH005,T017,Week 1,2,2026-05-08,manager,complete,2026-05-07
+NH005,T018,Week 1,3,2026-05-09,manager,complete,2026-05-10
+NH005,T019,Month 1,21,2026-05-27,new_hire,upcoming,
+NH005,T020,Month 1,14,2026-05-20,new_hire,upcoming,
+NH005,T021,Month 1,21,2026-05-27,new_hire,upcoming,
+NH005,T022,Month 1,10,2026-05-16,new_hire,upcoming,
+NH005,T023,Month 1,30,2026-06-05,new_hire,upcoming,
+NH005,T024,Month 1,28,2026-06-03,new_hire,upcoming,
+NH005,T025,Month 1,30,2026-06-05,manager,upcoming,
+NH005,T026,Month 1,30,2026-06-05,manager,upcoming,
+NH005,T027,Month 1,21,2026-05-27,manager,upcoming,
+NH005,T028,Month 2,45,2026-06-20,new_hire,upcoming,
+NH005,T029,Month 2,50,2026-06-25,new_hire,upcoming,
+NH005,T030,Month 2,55,2026-06-30,new_hire,upcoming,
+NH005,T031,Month 2,60,2026-07-05,new_hire,upcoming,
+NH005,T032,Month 2,45,2026-06-20,new_hire,upcoming,
+NH005,T033,Month 2,60,2026-07-05,manager,upcoming,
+NH005,T034,Month 2,55,2026-06-30,manager,upcoming,
+NH005,T035,Month 3,75,2026-07-20,new_hire,upcoming,
+NH005,T036,Month 3,90,2026-08-04,new_hire,upcoming,
+NH005,T037,Month 3,88,2026-08-02,new_hire,upcoming,
+NH005,T038,Month 3,90,2026-08-04,new_hire,upcoming,
+NH005,T039,Month 3,90,2026-08-04,manager,upcoming,
+NH005,T040,Month 3,90,2026-08-04,manager,upcoming,
+NH006,T001,Pre-boarding,3,2026-05-04,new_hire,complete,2026-05-03
+NH006,T002,Pre-boarding,3,2026-05-04,new_hire,complete,2026-05-06
+NH006,T003,Pre-boarding,1,2026-05-02,new_hire,complete,2026-05-01
+NH006,T004,Pre-boarding,5,2026-05-06,new_hire,complete,2026-05-10
+NH006,T005,Pre-boarding,-2,2026-04-29,manager,complete,2026-04-27
+NH006,T006,Pre-boarding,-1,2026-04-30,manager,complete,2026-05-01
+NH006,T007,Pre-boarding,1,2026-05-02,manager,complete,2026-05-03
+NH006,T008,Week 1,1,2026-05-02,new_hire,complete,2026-05-05
+NH006,T009,Week 1,2,2026-05-03,new_hire,complete,2026-05-06
+NH006,T010,Week 1,3,2026-05-04,new_hire,overdue,
+NH006,T011,Week 1,5,2026-05-06,new_hire,complete,2026-05-07
+NH006,T012,Week 1,7,2026-05-08,new_hire,complete,2026-05-10
+NH006,T013,Week 1,7,2026-05-08,new_hire,overdue,
+NH006,T014,Week 1,5,2026-05-06,new_hire,complete,2026-05-05
+NH006,T015,Week 1,3,2026-05-04,new_hire,complete,2026-05-03
+NH006,T016,Week 1,1,2026-05-02,manager,complete,2026-05-02
+NH006,T017,Week 1,2,2026-05-03,manager,complete,2026-05-07
+NH006,T018,Week 1,3,2026-05-04,manager,overdue,
+NH006,T019,Month 1,21,2026-05-22,new_hire,upcoming,
+NH006,T020,Month 1,14,2026-05-15,new_hire,complete,2026-05-10
+NH006,T021,Month 1,21,2026-05-22,new_hire,upcoming,
+NH006,T022,Month 1,10,2026-05-11,new_hire,pending,
+NH006,T023,Month 1,30,2026-05-31,new_hire,upcoming,
+NH006,T024,Month 1,28,2026-05-29,new_hire,upcoming,
+NH006,T025,Month 1,30,2026-05-31,manager,upcoming,
+NH006,T026,Month 1,30,2026-05-31,manager,upcoming,
+NH006,T027,Month 1,21,2026-05-22,manager,upcoming,
+NH006,T028,Month 2,45,2026-06-15,new_hire,upcoming,
+NH006,T029,Month 2,50,2026-06-20,new_hire,upcoming,
+NH006,T030,Month 2,55,2026-06-25,new_hire,upcoming,
+NH006,T031,Month 2,60,2026-06-30,new_hire,upcoming,
+NH006,T032,Month 2,45,2026-06-15,new_hire,upcoming,
+NH006,T033,Month 2,60,2026-06-30,manager,upcoming,
+NH006,T034,Month 2,55,2026-06-25,manager,upcoming,
+NH006,T035,Month 3,75,2026-07-15,new_hire,upcoming,
+NH006,T036,Month 3,90,2026-07-30,new_hire,upcoming,
+NH006,T037,Month 3,88,2026-07-28,new_hire,upcoming,
+NH006,T038,Month 3,90,2026-07-30,new_hire,upcoming,
+NH006,T039,Month 3,90,2026-07-30,manager,upcoming,
+NH006,T040,Month 3,90,2026-07-30,manager,upcoming,
+NH007,T001,Pre-boarding,3,2026-05-09,new_hire,complete,2026-05-10
+NH007,T002,Pre-boarding,3,2026-05-09,new_hire,overdue,
+NH007,T003,Pre-boarding,1,2026-05-07,new_hire,complete,2026-05-05
+NH007,T004,Pre-boarding,5,2026-05-11,new_hire,pending,
+NH007,T005,Pre-boarding,-2,2026-05-04,manager,overdue,
+NH007,T006,Pre-boarding,-1,2026-05-05,manager,complete,2026-05-06
+NH007,T007,Pre-boarding,1,2026-05-07,manager,complete,2026-05-10
+NH007,T008,Week 1,1,2026-05-07,new_hire,complete,2026-05-05
+NH007,T009,Week 1,2,2026-05-08,new_hire,complete,2026-05-06
+NH007,T010,Week 1,3,2026-05-09,new_hire,overdue,
+NH007,T011,Week 1,5,2026-05-11,new_hire,complete,2026-05-10
+NH007,T012,Week 1,7,2026-05-13,new_hire,complete,2026-05-10
+NH007,T013,Week 1,7,2026-05-13,new_hire,complete,2026-05-10
+NH007,T014,Week 1,5,2026-05-11,new_hire,pending,
+NH007,T015,Week 1,3,2026-05-09,new_hire,complete,2026-05-10
+NH007,T016,Week 1,1,2026-05-07,manager,complete,2026-05-06
+NH007,T017,Week 1,2,2026-05-08,manager,complete,2026-05-06
+NH007,T018,Week 1,3,2026-05-09,manager,complete,2026-05-10
+NH007,T019,Month 1,21,2026-05-27,new_hire,upcoming,
+NH007,T020,Month 1,14,2026-05-20,new_hire,upcoming,
+NH007,T021,Month 1,21,2026-05-27,new_hire,upcoming,
+NH007,T022,Month 1,10,2026-05-16,new_hire,upcoming,
+NH007,T023,Month 1,30,2026-06-05,new_hire,upcoming,
+NH007,T024,Month 1,28,2026-06-03,new_hire,upcoming,
+NH007,T025,Month 1,30,2026-06-05,manager,upcoming,
+NH007,T026,Month 1,30,2026-06-05,manager,upcoming,
+NH007,T027,Month 1,21,2026-05-27,manager,upcoming,
+NH007,T028,Month 2,45,2026-06-20,new_hire,upcoming,
+NH007,T029,Month 2,50,2026-06-25,new_hire,upcoming,
+NH007,T030,Month 2,55,2026-06-30,new_hire,upcoming,
+NH007,T031,Month 2,60,2026-07-05,new_hire,upcoming,
+NH007,T032,Month 2,45,2026-06-20,new_hire,upcoming,
+NH007,T033,Month 2,60,2026-07-05,manager,upcoming,
+NH007,T034,Month 2,55,2026-06-30,manager,upcoming,
+NH007,T035,Month 3,75,2026-07-20,new_hire,upcoming,
+NH007,T036,Month 3,90,2026-08-04,new_hire,upcoming,
+NH007,T037,Month 3,88,2026-08-02,new_hire,upcoming,
+NH007,T038,Month 3,90,2026-08-04,new_hire,upcoming,
+NH007,T039,Month 3,90,2026-08-04,manager,upcoming,
+NH007,T040,Month 3,90,2026-08-04,manager,upcoming,
+NH008,T001,Pre-boarding,3,2026-04-30,new_hire,complete,2026-04-30
+NH008,T002,Pre-boarding,3,2026-04-30,new_hire,complete,2026-05-02
+NH008,T003,Pre-boarding,1,2026-04-28,new_hire,complete,2026-05-02
+NH008,T004,Pre-boarding,5,2026-05-02,new_hire,complete,2026-04-30
+NH008,T005,Pre-boarding,-2,2026-04-25,manager,overdue,
+NH008,T006,Pre-boarding,-1,2026-04-26,manager,complete,2026-04-25
+NH008,T007,Pre-boarding,1,2026-04-28,manager,complete,2026-04-26
+NH008,T008,Week 1,1,2026-04-28,new_hire,complete,2026-04-27
+NH008,T009,Week 1,2,2026-04-29,new_hire,complete,2026-05-01
+NH008,T010,Week 1,3,2026-04-30,new_hire,complete,2026-05-02
+NH008,T011,Week 1,5,2026-05-02,new_hire,complete,2026-04-30
+NH008,T012,Week 1,7,2026-05-04,new_hire,complete,2026-05-06
+NH008,T013,Week 1,7,2026-05-04,new_hire,complete,2026-05-04
+NH008,T014,Week 1,5,2026-05-02,new_hire,overdue,
+NH008,T015,Week 1,3,2026-04-30,new_hire,complete,2026-05-03
+NH008,T016,Week 1,1,2026-04-28,manager,complete,2026-04-28
+NH008,T017,Week 1,2,2026-04-29,manager,complete,2026-05-02
+NH008,T018,Week 1,3,2026-04-30,manager,overdue,
+NH008,T019,Month 1,21,2026-05-18,new_hire,upcoming,
+NH008,T020,Month 1,14,2026-05-11,new_hire,complete,2026-05-10
+NH008,T021,Month 1,21,2026-05-18,new_hire,upcoming,
+NH008,T022,Month 1,10,2026-05-07,new_hire,overdue,
+NH008,T023,Month 1,30,2026-05-27,new_hire,upcoming,
+NH008,T024,Month 1,28,2026-05-25,new_hire,upcoming,
+NH008,T025,Month 1,30,2026-05-27,manager,upcoming,
+NH008,T026,Month 1,30,2026-05-27,manager,upcoming,
+NH008,T027,Month 1,21,2026-05-18,manager,upcoming,
+NH008,T028,Month 2,45,2026-06-11,new_hire,upcoming,
+NH008,T029,Month 2,50,2026-06-16,new_hire,upcoming,
+NH008,T030,Month 2,55,2026-06-21,new_hire,upcoming,
+NH008,T031,Month 2,60,2026-06-26,new_hire,upcoming,
+NH008,T032,Month 2,45,2026-06-11,new_hire,upcoming,
+NH008,T033,Month 2,60,2026-06-26,manager,upcoming,
+NH008,T034,Month 2,55,2026-06-21,manager,upcoming,
+NH008,T035,Month 3,75,2026-07-11,new_hire,upcoming,
+NH008,T036,Month 3,90,2026-07-26,new_hire,upcoming,
+NH008,T037,Month 3,88,2026-07-24,new_hire,upcoming,
+NH008,T038,Month 3,90,2026-07-26,new_hire,upcoming,
+NH008,T039,Month 3,90,2026-07-26,manager,upcoming,
+NH008,T040,Month 3,90,2026-07-26,manager,upcoming,
+NH009,T001,Pre-boarding,3,2026-04-06,new_hire,complete,2026-04-08
+NH009,T002,Pre-boarding,3,2026-04-06,new_hire,overdue,
+NH009,T003,Pre-boarding,1,2026-04-04,new_hire,overdue,
+NH009,T004,Pre-boarding,5,2026-04-08,new_hire,complete,2026-04-07
+NH009,T005,Pre-boarding,-2,2026-04-01,manager,complete,2026-03-31
+NH009,T006,Pre-boarding,-1,2026-04-02,manager,overdue,
+NH009,T007,Pre-boarding,1,2026-04-04,manager,overdue,
+NH009,T008,Week 1,1,2026-04-04,new_hire,overdue,
+NH009,T009,Week 1,2,2026-04-05,new_hire,complete,2026-04-04
+NH009,T010,Week 1,3,2026-04-06,new_hire,complete,2026-04-08
+NH009,T011,Week 1,5,2026-04-08,new_hire,overdue,
+NH009,T012,Week 1,7,2026-04-10,new_hire,overdue,
+NH009,T013,Week 1,7,2026-04-10,new_hire,overdue,
+NH009,T014,Week 1,5,2026-04-08,new_hire,overdue,
+NH009,T015,Week 1,3,2026-04-06,new_hire,complete,2026-04-10
+NH009,T016,Week 1,1,2026-04-04,manager,overdue,
+NH009,T017,Week 1,2,2026-04-05,manager,overdue,
+NH009,T018,Week 1,3,2026-04-06,manager,complete,2026-04-05
+NH009,T019,Month 1,21,2026-04-24,new_hire,complete,2026-04-22
+NH009,T020,Month 1,14,2026-04-17,new_hire,overdue,
+NH009,T021,Month 1,21,2026-04-24,new_hire,complete,2026-04-24
+NH009,T022,Month 1,10,2026-04-13,new_hire,overdue,
+NH009,T023,Month 1,30,2026-05-03,new_hire,overdue,
+NH009,T024,Month 1,28,2026-05-01,new_hire,complete,2026-05-04
+NH009,T025,Month 1,30,2026-05-03,manager,overdue,
+NH009,T026,Month 1,30,2026-05-03,manager,complete,2026-05-03
+NH009,T027,Month 1,21,2026-04-24,manager,overdue,
+NH009,T028,Month 2,45,2026-05-18,new_hire,upcoming,
+NH009,T029,Month 2,50,2026-05-23,new_hire,upcoming,
+NH009,T030,Month 2,55,2026-05-28,new_hire,upcoming,
+NH009,T031,Month 2,60,2026-06-02,new_hire,upcoming,
+NH009,T032,Month 2,45,2026-05-18,new_hire,upcoming,
+NH009,T033,Month 2,60,2026-06-02,manager,upcoming,
+NH009,T034,Month 2,55,2026-05-28,manager,upcoming,
+NH009,T035,Month 3,75,2026-06-17,new_hire,upcoming,
+NH009,T036,Month 3,90,2026-07-02,new_hire,upcoming,
+NH009,T037,Month 3,88,2026-06-30,new_hire,upcoming,
+NH009,T038,Month 3,90,2026-07-02,new_hire,upcoming,
+NH009,T039,Month 3,90,2026-07-02,manager,upcoming,
+NH009,T040,Month 3,90,2026-07-02,manager,upcoming,
+NH010,T001,Pre-boarding,3,2026-04-20,new_hire,overdue,
+NH010,T002,Pre-boarding,3,2026-04-20,new_hire,complete,2026-04-21
+NH010,T003,Pre-boarding,1,2026-04-18,new_hire,overdue,
+NH010,T004,Pre-boarding,5,2026-04-22,new_hire,complete,2026-04-22
+NH010,T005,Pre-boarding,-2,2026-04-15,manager,overdue,
+NH010,T006,Pre-boarding,-1,2026-04-16,manager,overdue,
+NH010,T007,Pre-boarding,1,2026-04-18,manager,complete,2026-04-21
+NH010,T008,Week 1,1,2026-04-18,new_hire,complete,2026-04-21
+NH010,T009,Week 1,2,2026-04-19,new_hire,complete,2026-04-17
+NH010,T010,Week 1,3,2026-04-20,new_hire,complete,2026-04-23
+NH010,T011,Week 1,5,2026-04-22,new_hire,overdue,
+NH010,T012,Week 1,7,2026-04-24,new_hire,overdue,
+NH010,T013,Week 1,7,2026-04-24,new_hire,overdue,
+NH010,T014,Week 1,5,2026-04-22,new_hire,overdue,
+NH010,T015,Week 1,3,2026-04-20,new_hire,complete,2026-04-19
+NH010,T016,Week 1,1,2026-04-18,manager,complete,2026-04-18
+NH010,T017,Week 1,2,2026-04-19,manager,overdue,
+NH010,T018,Week 1,3,2026-04-20,manager,overdue,
+NH010,T019,Month 1,21,2026-05-08,new_hire,overdue,
+NH010,T020,Month 1,14,2026-05-01,new_hire,overdue,
+NH010,T021,Month 1,21,2026-05-08,new_hire,complete,2026-05-07
+NH010,T022,Month 1,10,2026-04-27,new_hire,overdue,
+NH010,T023,Month 1,30,2026-05-17,new_hire,upcoming,
+NH010,T024,Month 1,28,2026-05-15,new_hire,complete,2026-05-10
+NH010,T025,Month 1,30,2026-05-17,manager,upcoming,
+NH010,T026,Month 1,30,2026-05-17,manager,upcoming,
+NH010,T027,Month 1,21,2026-05-08,manager,overdue,
+NH010,T028,Month 2,45,2026-06-01,new_hire,upcoming,
+NH010,T029,Month 2,50,2026-06-06,new_hire,upcoming,
+NH010,T030,Month 2,55,2026-06-11,new_hire,upcoming,
+NH010,T031,Month 2,60,2026-06-16,new_hire,upcoming,
+NH010,T032,Month 2,45,2026-06-01,new_hire,upcoming,
+NH010,T033,Month 2,60,2026-06-16,manager,upcoming,
+NH010,T034,Month 2,55,2026-06-11,manager,upcoming,
+NH010,T035,Month 3,75,2026-07-01,new_hire,upcoming,
+NH010,T036,Month 3,90,2026-07-16,new_hire,upcoming,
+NH010,T037,Month 3,88,2026-07-14,new_hire,upcoming,
+NH010,T038,Month 3,90,2026-07-16,new_hire,upcoming,
+NH010,T039,Month 3,90,2026-07-16,manager,upcoming,
+NH010,T040,Month 3,90,2026-07-16,manager,upcoming,
+NH011,T001,Pre-boarding,3,2026-03-29,new_hire,complete,2026-03-31
+NH011,T002,Pre-boarding,3,2026-03-29,new_hire,complete,2026-03-28
+NH011,T003,Pre-boarding,1,2026-03-27,new_hire,overdue,
+NH011,T004,Pre-boarding,5,2026-03-31,new_hire,overdue,
+NH011,T005,Pre-boarding,-2,2026-03-24,manager,overdue,
+NH011,T006,Pre-boarding,-1,2026-03-25,manager,overdue,
+NH011,T007,Pre-boarding,1,2026-03-27,manager,complete,2026-03-30
+NH011,T008,Week 1,1,2026-03-27,new_hire,overdue,
+NH011,T009,Week 1,2,2026-03-28,new_hire,complete,2026-03-29
+NH011,T010,Week 1,3,2026-03-29,new_hire,complete,2026-04-02
+NH011,T011,Week 1,5,2026-03-31,new_hire,complete,2026-03-30
+NH011,T012,Week 1,7,2026-04-02,new_hire,complete,2026-04-06
+NH011,T013,Week 1,7,2026-04-02,new_hire,complete,2026-04-03
+NH011,T014,Week 1,5,2026-03-31,new_hire,overdue,
+NH011,T015,Week 1,3,2026-03-29,new_hire,overdue,
+NH011,T016,Week 1,1,2026-03-27,manager,complete,2026-03-31
+NH011,T017,Week 1,2,2026-03-28,manager,overdue,
+NH011,T018,Week 1,3,2026-03-29,manager,complete,2026-04-02
+NH011,T019,Month 1,21,2026-04-16,new_hire,complete,2026-04-15
+NH011,T020,Month 1,14,2026-04-09,new_hire,complete,2026-04-12
+NH011,T021,Month 1,21,2026-04-16,new_hire,complete,2026-04-16
+NH011,T022,Month 1,10,2026-04-05,new_hire,complete,2026-04-03
+NH011,T023,Month 1,30,2026-04-25,new_hire,overdue,
+NH011,T024,Month 1,28,2026-04-23,new_hire,complete,2026-04-26
+NH011,T025,Month 1,30,2026-04-25,manager,complete,2026-04-28
+NH011,T026,Month 1,30,2026-04-25,manager,overdue,
+NH011,T027,Month 1,21,2026-04-16,manager,complete,2026-04-14
+NH011,T028,Month 2,45,2026-05-10,new_hire,complete,2026-05-10
+NH011,T029,Month 2,50,2026-05-15,new_hire,complete,2026-05-10
+NH011,T030,Month 2,55,2026-05-20,new_hire,upcoming,
+NH011,T031,Month 2,60,2026-05-25,new_hire,upcoming,
+NH011,T032,Month 2,45,2026-05-10,new_hire,complete,2026-05-10
+NH011,T033,Month 2,60,2026-05-25,manager,upcoming,
+NH011,T034,Month 2,55,2026-05-20,manager,upcoming,
+NH011,T035,Month 3,75,2026-06-09,new_hire,upcoming,
+NH011,T036,Month 3,90,2026-06-24,new_hire,upcoming,
+NH011,T037,Month 3,88,2026-06-22,new_hire,upcoming,
+NH011,T038,Month 3,90,2026-06-24,new_hire,upcoming,
+NH011,T039,Month 3,90,2026-06-24,manager,upcoming,
+NH011,T040,Month 3,90,2026-06-24,manager,upcoming,
+NH012,T001,Pre-boarding,3,2026-04-26,new_hire,complete,2026-04-29
+NH012,T002,Pre-boarding,3,2026-04-26,new_hire,complete,2026-04-27
+NH012,T003,Pre-boarding,1,2026-04-24,new_hire,complete,2026-04-26
+NH012,T004,Pre-boarding,5,2026-04-28,new_hire,complete,2026-04-30
+NH012,T005,Pre-boarding,-2,2026-04-21,manager,complete,2026-04-19
+NH012,T006,Pre-boarding,-1,2026-04-22,manager,complete,2026-04-20
+NH012,T007,Pre-boarding,1,2026-04-24,manager,complete,2026-04-28
+NH012,T008,Week 1,1,2026-04-24,new_hire,complete,2026-04-27
+NH012,T009,Week 1,2,2026-04-25,new_hire,overdue,
+NH012,T010,Week 1,3,2026-04-26,new_hire,complete,2026-04-25
+NH012,T011,Week 1,5,2026-04-28,new_hire,complete,2026-04-26
+NH012,T012,Week 1,7,2026-04-30,new_hire,overdue,
+NH012,T013,Week 1,7,2026-04-30,new_hire,overdue,
+NH012,T014,Week 1,5,2026-04-28,new_hire,complete,2026-05-01
+NH012,T015,Week 1,3,2026-04-26,new_hire,complete,2026-04-29
+NH012,T016,Week 1,1,2026-04-24,manager,overdue,
+NH012,T017,Week 1,2,2026-04-25,manager,complete,2026-04-28
+NH012,T018,Week 1,3,2026-04-26,manager,complete,2026-04-27
+NH012,T019,Month 1,21,2026-05-14,new_hire,complete,2026-05-10
+NH012,T020,Month 1,14,2026-05-07,new_hire,complete,2026-05-08
+NH012,T021,Month 1,21,2026-05-14,new_hire,complete,2026-05-10
+NH012,T022,Month 1,10,2026-05-03,new_hire,complete,2026-05-02
+NH012,T023,Month 1,30,2026-05-23,new_hire,upcoming,
+NH012,T024,Month 1,28,2026-05-21,new_hire,upcoming,
+NH012,T025,Month 1,30,2026-05-23,manager,upcoming,
+NH012,T026,Month 1,30,2026-05-23,manager,upcoming,
+NH012,T027,Month 1,21,2026-05-14,manager,complete,2026-05-10
+NH012,T028,Month 2,45,2026-06-07,new_hire,upcoming,
+NH012,T029,Month 2,50,2026-06-12,new_hire,upcoming,
+NH012,T030,Month 2,55,2026-06-17,new_hire,upcoming,
+NH012,T031,Month 2,60,2026-06-22,new_hire,upcoming,
+NH012,T032,Month 2,45,2026-06-07,new_hire,upcoming,
+NH012,T033,Month 2,60,2026-06-22,manager,upcoming,
+NH012,T034,Month 2,55,2026-06-17,manager,upcoming,
+NH012,T035,Month 3,75,2026-07-07,new_hire,upcoming,
+NH012,T036,Month 3,90,2026-07-22,new_hire,upcoming,
+NH012,T037,Month 3,88,2026-07-20,new_hire,upcoming,
+NH012,T038,Month 3,90,2026-07-22,new_hire,upcoming,
+NH012,T039,Month 3,90,2026-07-22,manager,upcoming,
+NH012,T040,Month 3,90,2026-07-22,manager,upcoming,
+NH013,T001,Pre-boarding,3,2026-04-17,new_hire,complete,2026-04-21
+NH013,T002,Pre-boarding,3,2026-04-17,new_hire,complete,2026-04-17
+NH013,T003,Pre-boarding,1,2026-04-15,new_hire,complete,2026-04-19
+NH013,T004,Pre-boarding,5,2026-04-19,new_hire,complete,2026-04-22
+NH013,T005,Pre-boarding,-2,2026-04-12,manager,complete,2026-04-13
+NH013,T006,Pre-boarding,-1,2026-04-13,manager,complete,2026-04-12
+NH013,T007,Pre-boarding,1,2026-04-15,manager,complete,2026-04-19
+NH013,T008,Week 1,1,2026-04-15,new_hire,overdue,
+NH013,T009,Week 1,2,2026-04-16,new_hire,overdue,
+NH013,T010,Week 1,3,2026-04-17,new_hire,complete,2026-04-15
+NH013,T011,Week 1,5,2026-04-19,new_hire,complete,2026-04-22
+NH013,T012,Week 1,7,2026-04-21,new_hire,complete,2026-04-21
+NH013,T013,Week 1,7,2026-04-21,new_hire,complete,2026-04-25
+NH013,T014,Week 1,5,2026-04-19,new_hire,complete,2026-04-19
+NH013,T015,Week 1,3,2026-04-17,new_hire,complete,2026-04-16
+NH013,T016,Week 1,1,2026-04-15,manager,complete,2026-04-13
+NH013,T017,Week 1,2,2026-04-16,manager,complete,2026-04-17
+NH013,T018,Week 1,3,2026-04-17,manager,overdue,
+NH013,T019,Month 1,21,2026-05-05,new_hire,overdue,
+NH013,T020,Month 1,14,2026-04-28,new_hire,complete,2026-05-01
+NH013,T021,Month 1,21,2026-05-05,new_hire,complete,2026-05-08
+NH013,T022,Month 1,10,2026-04-24,new_hire,overdue,
+NH013,T023,Month 1,30,2026-05-14,new_hire,complete,2026-05-10
+NH013,T024,Month 1,28,2026-05-12,new_hire,complete,2026-05-10
+NH013,T025,Month 1,30,2026-05-14,manager,complete,2026-05-10
+NH013,T026,Month 1,30,2026-05-14,manager,pending,
+NH013,T027,Month 1,21,2026-05-05,manager,overdue,
+NH013,T028,Month 2,45,2026-05-29,new_hire,upcoming,
+NH013,T029,Month 2,50,2026-06-03,new_hire,upcoming,
+NH013,T030,Month 2,55,2026-06-08,new_hire,upcoming,
+NH013,T031,Month 2,60,2026-06-13,new_hire,upcoming,
+NH013,T032,Month 2,45,2026-05-29,new_hire,upcoming,
+NH013,T033,Month 2,60,2026-06-13,manager,upcoming,
+NH013,T034,Month 2,55,2026-06-08,manager,upcoming,
+NH013,T035,Month 3,75,2026-06-28,new_hire,upcoming,
+NH013,T036,Month 3,90,2026-07-13,new_hire,upcoming,
+NH013,T037,Month 3,88,2026-07-11,new_hire,upcoming,
+NH013,T038,Month 3,90,2026-07-13,new_hire,upcoming,
+NH013,T039,Month 3,90,2026-07-13,manager,upcoming,
+NH013,T040,Month 3,90,2026-07-13,manager,upcoming,
+NH014,T001,Pre-boarding,3,2026-04-03,new_hire,overdue,
+NH014,T002,Pre-boarding,3,2026-04-03,new_hire,complete,2026-04-07
+NH014,T003,Pre-boarding,1,2026-04-01,new_hire,overdue,
+NH014,T004,Pre-boarding,5,2026-04-05,new_hire,complete,2026-04-03
+NH014,T005,Pre-boarding,-2,2026-03-29,manager,overdue,
+NH014,T006,Pre-boarding,-1,2026-03-30,manager,overdue,
+NH014,T007,Pre-boarding,1,2026-04-01,manager,complete,2026-03-31
+NH014,T008,Week 1,1,2026-04-01,new_hire,overdue,
+NH014,T009,Week 1,2,2026-04-02,new_hire,overdue,
+NH014,T010,Week 1,3,2026-04-03,new_hire,overdue,
+NH014,T011,Week 1,5,2026-04-05,new_hire,complete,2026-04-09
+NH014,T012,Week 1,7,2026-04-07,new_hire,overdue,
+NH014,T013,Week 1,7,2026-04-07,new_hire,overdue,
+NH014,T014,Week 1,5,2026-04-05,new_hire,overdue,
+NH014,T015,Week 1,3,2026-04-03,new_hire,complete,2026-04-07
+NH014,T016,Week 1,1,2026-04-01,manager,overdue,
+NH014,T017,Week 1,2,2026-04-02,manager,complete,2026-04-01
+NH014,T018,Week 1,3,2026-04-03,manager,overdue,
+NH014,T019,Month 1,21,2026-04-21,new_hire,complete,2026-04-21
+NH014,T020,Month 1,14,2026-04-14,new_hire,overdue,
+NH014,T021,Month 1,21,2026-04-21,new_hire,overdue,
+NH014,T022,Month 1,10,2026-04-10,new_hire,complete,2026-04-14
+NH014,T023,Month 1,30,2026-04-30,new_hire,complete,2026-05-03
+NH014,T024,Month 1,28,2026-04-28,new_hire,complete,2026-04-29
+NH014,T025,Month 1,30,2026-04-30,manager,complete,2026-04-30
+NH014,T026,Month 1,30,2026-04-30,manager,complete,2026-04-30
+NH014,T027,Month 1,21,2026-04-21,manager,complete,2026-04-23
+NH014,T028,Month 2,45,2026-05-15,new_hire,complete,2026-05-10
+NH014,T029,Month 2,50,2026-05-20,new_hire,upcoming,
+NH014,T030,Month 2,55,2026-05-25,new_hire,upcoming,
+NH014,T031,Month 2,60,2026-05-30,new_hire,upcoming,
+NH014,T032,Month 2,45,2026-05-15,new_hire,complete,2026-05-10
+NH014,T033,Month 2,60,2026-05-30,manager,upcoming,
+NH014,T034,Month 2,55,2026-05-25,manager,upcoming,
+NH014,T035,Month 3,75,2026-06-14,new_hire,upcoming,
+NH014,T036,Month 3,90,2026-06-29,new_hire,upcoming,
+NH014,T037,Month 3,88,2026-06-27,new_hire,upcoming,
+NH014,T038,Month 3,90,2026-06-29,new_hire,upcoming,
+NH014,T039,Month 3,90,2026-06-29,manager,upcoming,
+NH014,T040,Month 3,90,2026-06-29,manager,upcoming,
+NH015,T001,Pre-boarding,3,2026-04-11,new_hire,complete,2026-04-10
+NH015,T002,Pre-boarding,3,2026-04-11,new_hire,complete,2026-04-12
+NH015,T003,Pre-boarding,1,2026-04-09,new_hire,complete,2026-04-10
+NH015,T004,Pre-boarding,5,2026-04-13,new_hire,complete,2026-04-12
+NH015,T005,Pre-boarding,-2,2026-04-06,manager,overdue,
+NH015,T006,Pre-boarding,-1,2026-04-07,manager,overdue,
+NH015,T007,Pre-boarding,1,2026-04-09,manager,overdue,
+NH015,T008,Week 1,1,2026-04-09,new_hire,overdue,
+NH015,T009,Week 1,2,2026-04-10,new_hire,complete,2026-04-14
+NH015,T010,Week 1,3,2026-04-11,new_hire,overdue,
+NH015,T011,Week 1,5,2026-04-13,new_hire,overdue,
+NH015,T012,Week 1,7,2026-04-15,new_hire,overdue,
+NH015,T013,Week 1,7,2026-04-15,new_hire,complete,2026-04-16
+NH015,T014,Week 1,5,2026-04-13,new_hire,overdue,
+NH015,T015,Week 1,3,2026-04-11,new_hire,overdue,
+NH015,T016,Week 1,1,2026-04-09,manager,overdue,
+NH015,T017,Week 1,2,2026-04-10,manager,overdue,
+NH015,T018,Week 1,3,2026-04-11,manager,overdue,
+NH015,T019,Month 1,21,2026-04-29,new_hire,overdue,
+NH015,T020,Month 1,14,2026-04-22,new_hire,complete,2026-04-21
+NH015,T021,Month 1,21,2026-04-29,new_hire,complete,2026-04-30
+NH015,T022,Month 1,10,2026-04-18,new_hire,complete,2026-04-18
+NH015,T023,Month 1,30,2026-05-08,new_hire,overdue,
+NH015,T024,Month 1,28,2026-05-06,new_hire,overdue,
+NH015,T025,Month 1,30,2026-05-08,manager,overdue,
+NH015,T026,Month 1,30,2026-05-08,manager,overdue,
+NH015,T027,Month 1,21,2026-04-29,manager,overdue,
+NH015,T028,Month 2,45,2026-05-23,new_hire,upcoming,
+NH015,T029,Month 2,50,2026-05-28,new_hire,upcoming,
+NH015,T030,Month 2,55,2026-06-02,new_hire,upcoming,
+NH015,T031,Month 2,60,2026-06-07,new_hire,upcoming,
+NH015,T032,Month 2,45,2026-05-23,new_hire,upcoming,
+NH015,T033,Month 2,60,2026-06-07,manager,upcoming,
+NH015,T034,Month 2,55,2026-06-02,manager,upcoming,
+NH015,T035,Month 3,75,2026-06-22,new_hire,upcoming,
+NH015,T036,Month 3,90,2026-07-07,new_hire,upcoming,
+NH015,T037,Month 3,88,2026-07-05,new_hire,upcoming,
+NH015,T038,Month 3,90,2026-07-07,new_hire,upcoming,
+NH015,T039,Month 3,90,2026-07-07,manager,upcoming,
+NH015,T040,Month 3,90,2026-07-07,manager,upcoming,
+NH016,T001,Pre-boarding,3,2026-03-26,new_hire,overdue,
+NH016,T002,Pre-boarding,3,2026-03-26,new_hire,complete,2026-03-27
+NH016,T003,Pre-boarding,1,2026-03-24,new_hire,complete,2026-03-27
+NH016,T004,Pre-boarding,5,2026-03-28,new_hire,complete,2026-03-31
+NH016,T005,Pre-boarding,-2,2026-03-21,manager,complete,2026-03-25
+NH016,T006,Pre-boarding,-1,2026-03-22,manager,complete,2026-03-20
+NH016,T007,Pre-boarding,1,2026-03-24,manager,complete,2026-03-24
+NH016,T008,Week 1,1,2026-03-24,new_hire,complete,2026-03-24
+NH016,T009,Week 1,2,2026-03-25,new_hire,complete,2026-03-26
+NH016,T010,Week 1,3,2026-03-26,new_hire,complete,2026-03-30
+NH016,T011,Week 1,5,2026-03-28,new_hire,complete,2026-04-01
+NH016,T012,Week 1,7,2026-03-30,new_hire,complete,2026-03-28
+NH016,T013,Week 1,7,2026-03-30,new_hire,complete,2026-03-28
+NH016,T014,Week 1,5,2026-03-28,new_hire,overdue,
+NH016,T015,Week 1,3,2026-03-26,new_hire,complete,2026-03-29
+NH016,T016,Week 1,1,2026-03-24,manager,complete,2026-03-27
+NH016,T017,Week 1,2,2026-03-25,manager,complete,2026-03-23
+NH016,T018,Week 1,3,2026-03-26,manager,overdue,
+NH016,T019,Month 1,21,2026-04-13,new_hire,complete,2026-04-11
+NH016,T020,Month 1,14,2026-04-06,new_hire,complete,2026-04-05
+NH016,T021,Month 1,21,2026-04-13,new_hire,complete,2026-04-16
+NH016,T022,Month 1,10,2026-04-02,new_hire,complete,2026-04-01
+NH016,T023,Month 1,30,2026-04-22,new_hire,complete,2026-04-22
+NH016,T024,Month 1,28,2026-04-20,new_hire,complete,2026-04-19
+NH016,T025,Month 1,30,2026-04-22,manager,complete,2026-04-25
+NH016,T026,Month 1,30,2026-04-22,manager,overdue,
+NH016,T027,Month 1,21,2026-04-13,manager,overdue,
+NH016,T028,Month 2,45,2026-05-07,new_hire,complete,2026-05-07
+NH016,T029,Month 2,50,2026-05-12,new_hire,complete,2026-05-10
+NH016,T030,Month 2,55,2026-05-17,new_hire,upcoming,
+NH016,T031,Month 2,60,2026-05-22,new_hire,upcoming,
+NH016,T032,Month 2,45,2026-05-07,new_hire,overdue,
+NH016,T033,Month 2,60,2026-05-22,manager,upcoming,
+NH016,T034,Month 2,55,2026-05-17,manager,upcoming,
+NH016,T035,Month 3,75,2026-06-06,new_hire,upcoming,
+NH016,T036,Month 3,90,2026-06-21,new_hire,upcoming,
+NH016,T037,Month 3,88,2026-06-19,new_hire,upcoming,
+NH016,T038,Month 3,90,2026-06-21,new_hire,upcoming,
+NH016,T039,Month 3,90,2026-06-21,manager,upcoming,
+NH016,T040,Month 3,90,2026-06-21,manager,upcoming,
+NH017,T001,Pre-boarding,3,2026-03-10,new_hire,complete,2026-03-11
+NH017,T002,Pre-boarding,3,2026-03-10,new_hire,complete,2026-03-13
+NH017,T003,Pre-boarding,1,2026-03-08,new_hire,complete,2026-03-10
+NH017,T004,Pre-boarding,5,2026-03-12,new_hire,complete,2026-03-15
+NH017,T005,Pre-boarding,-2,2026-03-05,manager,complete,2026-03-08
+NH017,T006,Pre-boarding,-1,2026-03-06,manager,overdue,
+NH017,T007,Pre-boarding,1,2026-03-08,manager,overdue,
+NH017,T008,Week 1,1,2026-03-08,new_hire,complete,2026-03-06
+NH017,T009,Week 1,2,2026-03-09,new_hire,complete,2026-03-11
+NH017,T010,Week 1,3,2026-03-10,new_hire,complete,2026-03-10
+NH017,T011,Week 1,5,2026-03-12,new_hire,complete,2026-03-15
+NH017,T012,Week 1,7,2026-03-14,new_hire,complete,2026-03-16
+NH017,T013,Week 1,7,2026-03-14,new_hire,complete,2026-03-12
+NH017,T014,Week 1,5,2026-03-12,new_hire,complete,2026-03-16
+NH017,T015,Week 1,3,2026-03-10,new_hire,complete,2026-03-11
+NH017,T016,Week 1,1,2026-03-08,manager,overdue,
+NH017,T017,Week 1,2,2026-03-09,manager,complete,2026-03-13
+NH017,T018,Week 1,3,2026-03-10,manager,complete,2026-03-09
+NH017,T019,Month 1,21,2026-03-28,new_hire,complete,2026-03-31
+NH017,T020,Month 1,14,2026-03-21,new_hire,complete,2026-03-24
+NH017,T021,Month 1,21,2026-03-28,new_hire,complete,2026-04-01
+NH017,T022,Month 1,10,2026-03-17,new_hire,overdue,
+NH017,T023,Month 1,30,2026-04-06,new_hire,complete,2026-04-07
+NH017,T024,Month 1,28,2026-04-04,new_hire,complete,2026-04-07
+NH017,T025,Month 1,30,2026-04-06,manager,complete,2026-04-06
+NH017,T026,Month 1,30,2026-04-06,manager,overdue,
+NH017,T027,Month 1,21,2026-03-28,manager,overdue,
+NH017,T028,Month 2,45,2026-04-21,new_hire,complete,2026-04-22
+NH017,T029,Month 2,50,2026-04-26,new_hire,complete,2026-04-27
+NH017,T030,Month 2,55,2026-05-01,new_hire,complete,2026-05-04
+NH017,T031,Month 2,60,2026-05-06,new_hire,complete,2026-05-04
+NH017,T032,Month 2,45,2026-04-21,new_hire,complete,2026-04-21
+NH017,T033,Month 2,60,2026-05-06,manager,complete,2026-05-05
+NH017,T034,Month 2,55,2026-05-01,manager,complete,2026-05-01
+NH017,T035,Month 3,75,2026-05-21,new_hire,upcoming,
+NH017,T036,Month 3,90,2026-06-05,new_hire,upcoming,
+NH017,T037,Month 3,88,2026-06-03,new_hire,upcoming,
+NH017,T038,Month 3,90,2026-06-05,new_hire,upcoming,
+NH017,T039,Month 3,90,2026-06-05,manager,upcoming,
+NH017,T040,Month 3,90,2026-06-05,manager,upcoming,
+NH018,T001,Pre-boarding,3,2026-03-27,new_hire,complete,2026-03-29
+NH018,T002,Pre-boarding,3,2026-03-27,new_hire,overdue,
+NH018,T003,Pre-boarding,1,2026-03-25,new_hire,complete,2026-03-23
+NH018,T004,Pre-boarding,5,2026-03-29,new_hire,complete,2026-03-28
+NH018,T005,Pre-boarding,-2,2026-03-22,manager,complete,2026-03-25
+NH018,T006,Pre-boarding,-1,2026-03-23,manager,complete,2026-03-25
+NH018,T007,Pre-boarding,1,2026-03-25,manager,overdue,
+NH018,T008,Week 1,1,2026-03-25,new_hire,overdue,
+NH018,T009,Week 1,2,2026-03-26,new_hire,complete,2026-03-27
+NH018,T010,Week 1,3,2026-03-27,new_hire,complete,2026-03-25
+NH018,T011,Week 1,5,2026-03-29,new_hire,complete,2026-03-28
+NH018,T012,Week 1,7,2026-03-31,new_hire,complete,2026-03-30
+NH018,T013,Week 1,7,2026-03-31,new_hire,complete,2026-04-02
+NH018,T014,Week 1,5,2026-03-29,new_hire,complete,2026-03-31
+NH018,T015,Week 1,3,2026-03-27,new_hire,complete,2026-03-28
+NH018,T016,Week 1,1,2026-03-25,manager,overdue,
+NH018,T017,Week 1,2,2026-03-26,manager,complete,2026-03-26
+NH018,T018,Week 1,3,2026-03-27,manager,overdue,
+NH018,T019,Month 1,21,2026-04-14,new_hire,complete,2026-04-14
+NH018,T020,Month 1,14,2026-04-07,new_hire,complete,2026-04-10
+NH018,T021,Month 1,21,2026-04-14,new_hire,complete,2026-04-12
+NH018,T022,Month 1,10,2026-04-03,new_hire,overdue,
+NH018,T023,Month 1,30,2026-04-23,new_hire,overdue,
+NH018,T024,Month 1,28,2026-04-21,new_hire,overdue,
+NH018,T025,Month 1,30,2026-04-23,manager,complete,2026-04-26
+NH018,T026,Month 1,30,2026-04-23,manager,complete,2026-04-26
+NH018,T027,Month 1,21,2026-04-14,manager,overdue,
+NH018,T028,Month 2,45,2026-05-08,new_hire,overdue,
+NH018,T029,Month 2,50,2026-05-13,new_hire,complete,2026-05-10
+NH018,T030,Month 2,55,2026-05-18,new_hire,upcoming,
+NH018,T031,Month 2,60,2026-05-23,new_hire,upcoming,
+NH018,T032,Month 2,45,2026-05-08,new_hire,overdue,
+NH018,T033,Month 2,60,2026-05-23,manager,upcoming,
+NH018,T034,Month 2,55,2026-05-18,manager,upcoming,
+NH018,T035,Month 3,75,2026-06-07,new_hire,upcoming,
+NH018,T036,Month 3,90,2026-06-22,new_hire,upcoming,
+NH018,T037,Month 3,88,2026-06-20,new_hire,upcoming,
+NH018,T038,Month 3,90,2026-06-22,new_hire,upcoming,
+NH018,T039,Month 3,90,2026-06-22,manager,upcoming,
+NH018,T040,Month 3,90,2026-06-22,manager,upcoming,
+NH019,T001,Pre-boarding,3,2026-03-26,new_hire,complete,2026-03-26
+NH019,T002,Pre-boarding,3,2026-03-26,new_hire,complete,2026-03-24
+NH019,T003,Pre-boarding,1,2026-03-24,new_hire,overdue,
+NH019,T004,Pre-boarding,5,2026-03-28,new_hire,complete,2026-03-26
+NH019,T005,Pre-boarding,-2,2026-03-21,manager,overdue,
+NH019,T006,Pre-boarding,-1,2026-03-22,manager,overdue,
+NH019,T007,Pre-boarding,1,2026-03-24,manager,overdue,
+NH019,T008,Week 1,1,2026-03-24,new_hire,complete,2026-03-28
+NH019,T009,Week 1,2,2026-03-25,new_hire,overdue,
+NH019,T010,Week 1,3,2026-03-26,new_hire,complete,2026-03-24
+NH019,T011,Week 1,5,2026-03-28,new_hire,complete,2026-03-29
+NH019,T012,Week 1,7,2026-03-30,new_hire,complete,2026-03-30
+NH019,T013,Week 1,7,2026-03-30,new_hire,complete,2026-03-28
+NH019,T014,Week 1,5,2026-03-28,new_hire,complete,2026-04-01
+NH019,T015,Week 1,3,2026-03-26,new_hire,complete,2026-03-30
+NH019,T016,Week 1,1,2026-03-24,manager,complete,2026-03-25
+NH019,T017,Week 1,2,2026-03-25,manager,complete,2026-03-28
+NH019,T018,Week 1,3,2026-03-26,manager,overdue,
+NH019,T019,Month 1,21,2026-04-13,new_hire,complete,2026-04-17
+NH019,T020,Month 1,14,2026-04-06,new_hire,complete,2026-04-06
+NH019,T021,Month 1,21,2026-04-13,new_hire,complete,2026-04-12
+NH019,T022,Month 1,10,2026-04-02,new_hire,complete,2026-04-06
+NH019,T023,Month 1,30,2026-04-22,new_hire,complete,2026-04-24
+NH019,T024,Month 1,28,2026-04-20,new_hire,overdue,
+NH019,T025,Month 1,30,2026-04-22,manager,complete,2026-04-24
+NH019,T026,Month 1,30,2026-04-22,manager,complete,2026-04-23
+NH019,T027,Month 1,21,2026-04-13,manager,complete,2026-04-15
+NH019,T028,Month 2,45,2026-05-07,new_hire,overdue,
+NH019,T029,Month 2,50,2026-05-12,new_hire,complete,2026-05-10
+NH019,T030,Month 2,55,2026-05-17,new_hire,upcoming,
+NH019,T031,Month 2,60,2026-05-22,new_hire,upcoming,
+NH019,T032,Month 2,45,2026-05-07,new_hire,complete,2026-05-10
+NH019,T033,Month 2,60,2026-05-22,manager,upcoming,
+NH019,T034,Month 2,55,2026-05-17,manager,upcoming,
+NH019,T035,Month 3,75,2026-06-06,new_hire,upcoming,
+NH019,T036,Month 3,90,2026-06-21,new_hire,upcoming,
+NH019,T037,Month 3,88,2026-06-19,new_hire,upcoming,
+NH019,T038,Month 3,90,2026-06-21,new_hire,upcoming,
+NH019,T039,Month 3,90,2026-06-21,manager,upcoming,
+NH019,T040,Month 3,90,2026-06-21,manager,upcoming,
+NH020,T001,Pre-boarding,3,2026-03-16,new_hire,complete,2026-03-20
+NH020,T002,Pre-boarding,3,2026-03-16,new_hire,complete,2026-03-15
+NH020,T003,Pre-boarding,1,2026-03-14,new_hire,complete,2026-03-12
+NH020,T004,Pre-boarding,5,2026-03-18,new_hire,complete,2026-03-17
+NH020,T005,Pre-boarding,-2,2026-03-11,manager,overdue,
+NH020,T006,Pre-boarding,-1,2026-03-12,manager,complete,2026-03-13
+NH020,T007,Pre-boarding,1,2026-03-14,manager,overdue,
+NH020,T008,Week 1,1,2026-03-14,new_hire,overdue,
+NH020,T009,Week 1,2,2026-03-15,new_hire,complete,2026-03-14
+NH020,T010,Week 1,3,2026-03-16,new_hire,complete,2026-03-16
+NH020,T011,Week 1,5,2026-03-18,new_hire,overdue,
+NH020,T012,Week 1,7,2026-03-20,new_hire,overdue,
+NH020,T013,Week 1,7,2026-03-20,new_hire,overdue,
+NH020,T014,Week 1,5,2026-03-18,new_hire,overdue,
+NH020,T015,Week 1,3,2026-03-16,new_hire,overdue,
+NH020,T016,Week 1,1,2026-03-14,manager,overdue,
+NH020,T017,Week 1,2,2026-03-15,manager,overdue,
+NH020,T018,Week 1,3,2026-03-16,manager,overdue,
+NH020,T019,Month 1,21,2026-04-03,new_hire,complete,2026-04-05
+NH020,T020,Month 1,14,2026-03-27,new_hire,complete,2026-03-26
+NH020,T021,Month 1,21,2026-04-03,new_hire,overdue,
+NH020,T022,Month 1,10,2026-03-23,new_hire,overdue,
+NH020,T023,Month 1,30,2026-04-12,new_hire,complete,2026-04-11
+NH020,T024,Month 1,28,2026-04-10,new_hire,overdue,
+NH020,T025,Month 1,30,2026-04-12,manager,overdue,
+NH020,T026,Month 1,30,2026-04-12,manager,overdue,
+NH020,T027,Month 1,21,2026-04-03,manager,overdue,
+NH020,T028,Month 2,45,2026-04-27,new_hire,complete,2026-04-28
+NH020,T029,Month 2,50,2026-05-02,new_hire,overdue,
+NH020,T030,Month 2,55,2026-05-07,new_hire,overdue,
+NH020,T031,Month 2,60,2026-05-12,new_hire,pending,
+NH020,T032,Month 2,45,2026-04-27,new_hire,overdue,
+NH020,T033,Month 2,60,2026-05-12,manager,pending,
+NH020,T034,Month 2,55,2026-05-07,manager,complete,2026-05-05
+NH020,T035,Month 3,75,2026-05-27,new_hire,upcoming,
+NH020,T036,Month 3,90,2026-06-11,new_hire,upcoming,
+NH020,T037,Month 3,88,2026-06-09,new_hire,upcoming,
+NH020,T038,Month 3,90,2026-06-11,new_hire,upcoming,
+NH020,T039,Month 3,90,2026-06-11,manager,upcoming,
+NH020,T040,Month 3,90,2026-06-11,manager,upcoming,
+NH021,T001,Pre-boarding,3,2026-03-08,new_hire,overdue,
+NH021,T002,Pre-boarding,3,2026-03-08,new_hire,complete,2026-03-10
+NH021,T003,Pre-boarding,1,2026-03-06,new_hire,complete,2026-03-04
+NH021,T004,Pre-boarding,5,2026-03-10,new_hire,complete,2026-03-13
+NH021,T005,Pre-boarding,-2,2026-03-03,manager,overdue,
+NH021,T006,Pre-boarding,-1,2026-03-04,manager,complete,2026-03-02
+NH021,T007,Pre-boarding,1,2026-03-06,manager,overdue,
+NH021,T008,Week 1,1,2026-03-06,new_hire,complete,2026-03-06
+NH021,T009,Week 1,2,2026-03-07,new_hire,complete,2026-03-11
+NH021,T010,Week 1,3,2026-03-08,new_hire,complete,2026-03-09
+NH021,T011,Week 1,5,2026-03-10,new_hire,complete,2026-03-11
+NH021,T012,Week 1,7,2026-03-12,new_hire,overdue,
+NH021,T013,Week 1,7,2026-03-12,new_hire,complete,2026-03-14
+NH021,T014,Week 1,5,2026-03-10,new_hire,complete,2026-03-14
+NH021,T015,Week 1,3,2026-03-08,new_hire,complete,2026-03-06
+NH021,T016,Week 1,1,2026-03-06,manager,complete,2026-03-07
+NH021,T017,Week 1,2,2026-03-07,manager,complete,2026-03-10
+NH021,T018,Week 1,3,2026-03-08,manager,complete,2026-03-07
+NH021,T019,Month 1,21,2026-03-26,new_hire,complete,2026-03-29
+NH021,T020,Month 1,14,2026-03-19,new_hire,complete,2026-03-22
+NH021,T021,Month 1,21,2026-03-26,new_hire,overdue,
+NH021,T022,Month 1,10,2026-03-15,new_hire,complete,2026-03-17
+NH021,T023,Month 1,30,2026-04-04,new_hire,complete,2026-04-02
+NH021,T024,Month 1,28,2026-04-02,new_hire,complete,2026-04-02
+NH021,T025,Month 1,30,2026-04-04,manager,complete,2026-04-08
+NH021,T026,Month 1,30,2026-04-04,manager,complete,2026-04-06
+NH021,T027,Month 1,21,2026-03-26,manager,overdue,
+NH021,T028,Month 2,45,2026-04-19,new_hire,complete,2026-04-23
+NH021,T029,Month 2,50,2026-04-24,new_hire,complete,2026-04-25
+NH021,T030,Month 2,55,2026-04-29,new_hire,complete,2026-05-01
+NH021,T031,Month 2,60,2026-05-04,new_hire,complete,2026-05-08
+NH021,T032,Month 2,45,2026-04-19,new_hire,complete,2026-04-20
+NH021,T033,Month 2,60,2026-05-04,manager,overdue,
+NH021,T034,Month 2,55,2026-04-29,manager,complete,2026-05-01
+NH021,T035,Month 3,75,2026-05-19,new_hire,upcoming,
+NH021,T036,Month 3,90,2026-06-03,new_hire,upcoming,
+NH021,T037,Month 3,88,2026-06-01,new_hire,upcoming,
+NH021,T038,Month 3,90,2026-06-03,new_hire,upcoming,
+NH021,T039,Month 3,90,2026-06-03,manager,upcoming,
+NH021,T040,Month 3,90,2026-06-03,manager,upcoming,
+NH022,T001,Pre-boarding,3,2026-02-21,new_hire,complete,2026-02-21
+NH022,T002,Pre-boarding,3,2026-02-21,new_hire,complete,2026-02-24
+NH022,T003,Pre-boarding,1,2026-02-19,new_hire,complete,2026-02-17
+NH022,T004,Pre-boarding,5,2026-02-23,new_hire,overdue,
+NH022,T005,Pre-boarding,-2,2026-02-16,manager,complete,2026-02-15
+NH022,T006,Pre-boarding,-1,2026-02-17,manager,complete,2026-02-17
+NH022,T007,Pre-boarding,1,2026-02-19,manager,complete,2026-02-21
+NH022,T008,Week 1,1,2026-02-19,new_hire,complete,2026-02-18
+NH022,T009,Week 1,2,2026-02-20,new_hire,overdue,
+NH022,T010,Week 1,3,2026-02-21,new_hire,overdue,
+NH022,T011,Week 1,5,2026-02-23,new_hire,complete,2026-02-21
+NH022,T012,Week 1,7,2026-02-25,new_hire,complete,2026-02-24
+NH022,T013,Week 1,7,2026-02-25,new_hire,complete,2026-02-28
+NH022,T014,Week 1,5,2026-02-23,new_hire,complete,2026-02-26
+NH022,T015,Week 1,3,2026-02-21,new_hire,complete,2026-02-25
+NH022,T016,Week 1,1,2026-02-19,manager,complete,2026-02-20
+NH022,T017,Week 1,2,2026-02-20,manager,complete,2026-02-22
+NH022,T018,Week 1,3,2026-02-21,manager,complete,2026-02-20
+NH022,T019,Month 1,21,2026-03-11,new_hire,overdue,
+NH022,T020,Month 1,14,2026-03-04,new_hire,complete,2026-03-03
+NH022,T021,Month 1,21,2026-03-11,new_hire,complete,2026-03-11
+NH022,T022,Month 1,10,2026-02-28,new_hire,complete,2026-03-04
+NH022,T023,Month 1,30,2026-03-20,new_hire,complete,2026-03-24
+NH022,T024,Month 1,28,2026-03-18,new_hire,complete,2026-03-22
+NH022,T025,Month 1,30,2026-03-20,manager,complete,2026-03-23
+NH022,T026,Month 1,30,2026-03-20,manager,complete,2026-03-22
+NH022,T027,Month 1,21,2026-03-11,manager,complete,2026-03-14
+NH022,T028,Month 2,45,2026-04-04,new_hire,complete,2026-04-03
+NH022,T029,Month 2,50,2026-04-09,new_hire,complete,2026-04-10
+NH022,T030,Month 2,55,2026-04-14,new_hire,complete,2026-04-16
+NH022,T031,Month 2,60,2026-04-19,new_hire,complete,2026-04-20
+NH022,T032,Month 2,45,2026-04-04,new_hire,complete,2026-04-04
+NH022,T033,Month 2,60,2026-04-19,manager,overdue,
+NH022,T034,Month 2,55,2026-04-14,manager,overdue,
+NH022,T035,Month 3,75,2026-05-04,new_hire,complete,2026-05-05
+NH022,T036,Month 3,90,2026-05-19,new_hire,upcoming,
+NH022,T037,Month 3,88,2026-05-17,new_hire,upcoming,
+NH022,T038,Month 3,90,2026-05-19,new_hire,upcoming,
+NH022,T039,Month 3,90,2026-05-19,manager,upcoming,
+NH022,T040,Month 3,90,2026-05-19,manager,upcoming,
+NH023,T001,Pre-boarding,3,2026-02-16,new_hire,complete,2026-02-20
+NH023,T002,Pre-boarding,3,2026-02-16,new_hire,complete,2026-02-16
+NH023,T003,Pre-boarding,1,2026-02-14,new_hire,overdue,
+NH023,T004,Pre-boarding,5,2026-02-18,new_hire,overdue,
+NH023,T005,Pre-boarding,-2,2026-02-11,manager,overdue,
+NH023,T006,Pre-boarding,-1,2026-02-12,manager,complete,2026-02-15
+NH023,T007,Pre-boarding,1,2026-02-14,manager,overdue,
+NH023,T008,Week 1,1,2026-02-14,new_hire,complete,2026-02-13
+NH023,T009,Week 1,2,2026-02-15,new_hire,complete,2026-02-13
+NH023,T010,Week 1,3,2026-02-16,new_hire,complete,2026-02-18
+NH023,T011,Week 1,5,2026-02-18,new_hire,complete,2026-02-16
+NH023,T012,Week 1,7,2026-02-20,new_hire,overdue,
+NH023,T013,Week 1,7,2026-02-20,new_hire,complete,2026-02-22
+NH023,T014,Week 1,5,2026-02-18,new_hire,overdue,
+NH023,T015,Week 1,3,2026-02-16,new_hire,complete,2026-02-15
+NH023,T016,Week 1,1,2026-02-14,manager,complete,2026-02-17
+NH023,T017,Week 1,2,2026-02-15,manager,overdue,
+NH023,T018,Week 1,3,2026-02-16,manager,complete,2026-02-20
+NH023,T019,Month 1,21,2026-03-06,new_hire,overdue,
+NH023,T020,Month 1,14,2026-02-27,new_hire,complete,2026-03-02
+NH023,T021,Month 1,21,2026-03-06,new_hire,complete,2026-03-04
+NH023,T022,Month 1,10,2026-02-23,new_hire,overdue,
+NH023,T023,Month 1,30,2026-03-15,new_hire,overdue,
+NH023,T024,Month 1,28,2026-03-13,new_hire,overdue,
+NH023,T025,Month 1,30,2026-03-15,manager,complete,2026-03-15
+NH023,T026,Month 1,30,2026-03-15,manager,overdue,
+NH023,T027,Month 1,21,2026-03-06,manager,overdue,
+NH023,T028,Month 2,45,2026-03-30,new_hire,complete,2026-04-01
+NH023,T029,Month 2,50,2026-04-04,new_hire,complete,2026-04-02
+NH023,T030,Month 2,55,2026-04-09,new_hire,complete,2026-04-12
+NH023,T031,Month 2,60,2026-04-14,new_hire,overdue,
+NH023,T032,Month 2,45,2026-03-30,new_hire,overdue,
+NH023,T033,Month 2,60,2026-04-14,manager,overdue,
+NH023,T034,Month 2,55,2026-04-09,manager,complete,2026-04-07
+NH023,T035,Month 3,75,2026-04-29,new_hire,overdue,
+NH023,T036,Month 3,90,2026-05-14,new_hire,pending,
+NH023,T037,Month 3,88,2026-05-12,new_hire,complete,2026-05-10
+NH023,T038,Month 3,90,2026-05-14,new_hire,pending,
+NH023,T039,Month 3,90,2026-05-14,manager,pending,
+NH023,T040,Month 3,90,2026-05-14,manager,complete,2026-05-10
+NH024,T001,Pre-boarding,3,2026-02-17,new_hire,complete,2026-02-17
+NH024,T002,Pre-boarding,3,2026-02-17,new_hire,complete,2026-02-16
+NH024,T003,Pre-boarding,1,2026-02-15,new_hire,complete,2026-02-16
+NH024,T004,Pre-boarding,5,2026-02-19,new_hire,complete,2026-02-23
+NH024,T005,Pre-boarding,-2,2026-02-12,manager,complete,2026-02-11
+NH024,T006,Pre-boarding,-1,2026-02-13,manager,complete,2026-02-17
+NH024,T007,Pre-boarding,1,2026-02-15,manager,complete,2026-02-18
+NH024,T008,Week 1,1,2026-02-15,new_hire,complete,2026-02-17
+NH024,T009,Week 1,2,2026-02-16,new_hire,complete,2026-02-17
+NH024,T010,Week 1,3,2026-02-17,new_hire,overdue,
+NH024,T011,Week 1,5,2026-02-19,new_hire,complete,2026-02-22
+NH024,T012,Week 1,7,2026-02-21,new_hire,complete,2026-02-25
+NH024,T013,Week 1,7,2026-02-21,new_hire,complete,2026-02-21
+NH024,T014,Week 1,5,2026-02-19,new_hire,overdue,
+NH024,T015,Week 1,3,2026-02-17,new_hire,complete,2026-02-18
+NH024,T016,Week 1,1,2026-02-15,manager,overdue,
+NH024,T017,Week 1,2,2026-02-16,manager,overdue,
+NH024,T018,Week 1,3,2026-02-17,manager,complete,2026-02-18
+NH024,T019,Month 1,21,2026-03-07,new_hire,overdue,
+NH024,T020,Month 1,14,2026-02-28,new_hire,complete,2026-02-28
+NH024,T021,Month 1,21,2026-03-07,new_hire,complete,2026-03-08
+NH024,T022,Month 1,10,2026-02-24,new_hire,overdue,
+NH024,T023,Month 1,30,2026-03-16,new_hire,complete,2026-03-17
+NH024,T024,Month 1,28,2026-03-14,new_hire,complete,2026-03-16
+NH024,T025,Month 1,30,2026-03-16,manager,complete,2026-03-19
+NH024,T026,Month 1,30,2026-03-16,manager,complete,2026-03-20
+NH024,T027,Month 1,21,2026-03-07,manager,overdue,
+NH024,T028,Month 2,45,2026-03-31,new_hire,complete,2026-04-02
+NH024,T029,Month 2,50,2026-04-05,new_hire,overdue,
+NH024,T030,Month 2,55,2026-04-10,new_hire,overdue,
+NH024,T031,Month 2,60,2026-04-15,new_hire,overdue,
+NH024,T032,Month 2,45,2026-03-31,new_hire,overdue,
+NH024,T033,Month 2,60,2026-04-15,manager,overdue,
+NH024,T034,Month 2,55,2026-04-10,manager,overdue,
+NH024,T035,Month 3,75,2026-04-30,new_hire,overdue,
+NH024,T036,Month 3,90,2026-05-15,new_hire,pending,
+NH024,T037,Month 3,88,2026-05-13,new_hire,complete,2026-05-10
+NH024,T038,Month 3,90,2026-05-15,new_hire,complete,2026-05-10
+NH024,T039,Month 3,90,2026-05-15,manager,complete,2026-05-10
+NH024,T040,Month 3,90,2026-05-15,manager,pending,
+NH025,T001,Pre-boarding,3,2026-02-24,new_hire,overdue,
+NH025,T002,Pre-boarding,3,2026-02-24,new_hire,overdue,
+NH025,T003,Pre-boarding,1,2026-02-22,new_hire,overdue,
+NH025,T004,Pre-boarding,5,2026-02-26,new_hire,overdue,
+NH025,T005,Pre-boarding,-2,2026-02-19,manager,overdue,
+NH025,T006,Pre-boarding,-1,2026-02-20,manager,overdue,
+NH025,T007,Pre-boarding,1,2026-02-22,manager,complete,2026-02-23
+NH025,T008,Week 1,1,2026-02-22,new_hire,complete,2026-02-22
+NH025,T009,Week 1,2,2026-02-23,new_hire,overdue,
+NH025,T010,Week 1,3,2026-02-24,new_hire,complete,2026-02-24
+NH025,T011,Week 1,5,2026-02-26,new_hire,complete,2026-02-27
+NH025,T012,Week 1,7,2026-02-28,new_hire,complete,2026-02-27
+NH025,T013,Week 1,7,2026-02-28,new_hire,overdue,
+NH025,T014,Week 1,5,2026-02-26,new_hire,overdue,
+NH025,T015,Week 1,3,2026-02-24,new_hire,complete,2026-02-26
+NH025,T016,Week 1,1,2026-02-22,manager,overdue,
+NH025,T017,Week 1,2,2026-02-23,manager,overdue,
+NH025,T018,Week 1,3,2026-02-24,manager,complete,2026-02-28
+NH025,T019,Month 1,21,2026-03-14,new_hire,overdue,
+NH025,T020,Month 1,14,2026-03-07,new_hire,overdue,
+NH025,T021,Month 1,21,2026-03-14,new_hire,complete,2026-03-18
+NH025,T022,Month 1,10,2026-03-03,new_hire,complete,2026-03-01
+NH025,T023,Month 1,30,2026-03-23,new_hire,overdue,
+NH025,T024,Month 1,28,2026-03-21,new_hire,complete,2026-03-25
+NH025,T025,Month 1,30,2026-03-23,manager,overdue,
+NH025,T026,Month 1,30,2026-03-23,manager,overdue,
+NH025,T027,Month 1,21,2026-03-14,manager,overdue,
+NH025,T028,Month 2,45,2026-04-07,new_hire,overdue,
+NH025,T029,Month 2,50,2026-04-12,new_hire,overdue,
+NH025,T030,Month 2,55,2026-04-17,new_hire,overdue,
+NH025,T031,Month 2,60,2026-04-22,new_hire,complete,2026-04-26
+NH025,T032,Month 2,45,2026-04-07,new_hire,complete,2026-04-07
+NH025,T033,Month 2,60,2026-04-22,manager,overdue,
+NH025,T034,Month 2,55,2026-04-17,manager,overdue,
+NH025,T035,Month 3,75,2026-05-07,new_hire,overdue,
+NH025,T036,Month 3,90,2026-05-22,new_hire,upcoming,
+NH025,T037,Month 3,88,2026-05-20,new_hire,upcoming,
+NH025,T038,Month 3,90,2026-05-22,new_hire,upcoming,
+NH025,T039,Month 3,90,2026-05-22,manager,upcoming,
+NH025,T040,Month 3,90,2026-05-22,manager,upcoming,

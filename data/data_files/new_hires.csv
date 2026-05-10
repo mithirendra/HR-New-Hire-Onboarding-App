@@ -1,0 +1,26 @@
+hire_id,first_name,last_name,full_name,role,department,manager_id,manager_name,buddy_id,buddy_name,start_date,days_employed,email
+NH001,Sarah,Lee,Sarah Lee,Marketing Executive,Marketing,M01,James Okafor,B01,Priya Nair,2026-05-24,0,sarah.lee@mitma.com
+NH002,Raj,Kumar,Raj Kumar,Accounts Executive,Finance,M02,Clare Santos,B04,Sophie Grant,2026-05-16,0,raj.kumar@mitma.com
+NH003,Aisha,Bello,Aisha Bello,Software Engineer,IT,M03,Dev Patel,B05,Kenji Tanaka,2026-05-23,0,aisha.bello@mitma.com
+NH004,Liam,Chen,Liam Chen,Logistics Executive,Operations,M04,Ruth Adeyemi,B07,Carlos Rivera,2026-05-09,1,liam.chen@mitma.com
+NH005,Nina,Ferreira,Nina Ferreira,Sales Executive,Commercial,M05,Mark Lim,B09,Grace O'Brien,2026-05-06,4,nina.ferreira@mitma.com
+NH006,Omar,Hassan,Omar Hassan,Marketing Executive,Marketing,M01,James Okafor,B01,Priya Nair,2026-05-01,9,omar.hassan@mitma.com
+NH007,Chloe,Martin,Chloe Martin,Treasury Coordinator,Finance,M02,Clare Santos,B03,Amara Diallo,2026-05-06,4,chloe.martin@mitma.com
+NH008,Daniel,Park,Daniel Park,DevOps Engineer,IT,M03,Dev Patel,B06,Lena Hoffmann,2026-04-27,13,daniel.park@mitma.com
+NH009,Yemi,Adeyinka,Yemi Adeyinka,Supply Chain Coordinator,Operations,M04,Ruth Adeyemi,B07,Carlos Rivera,2026-04-03,37,yemi.adeyinka@mitma.com
+NH010,Isla,MacLeod,Isla MacLeod,Business Development Analyst,Commercial,M05,Mark Lim,B10,Sam Nguyen,2026-04-17,23,isla.macleod@mitma.com
+NH011,Andre,Dumont,Andre Dumont,Content Writer,Marketing,M01,James Okafor,B01,Priya Nair,2026-03-26,45,andre.dumont@mitma.com
+NH012,Zara,Khan,Zara Khan,Finance Analyst,Finance,M02,Clare Santos,B04,Sophie Grant,2026-04-23,17,zara.khan@mitma.com
+NH013,Ben,Osei,Ben Osei,Software Engineer,IT,M03,Dev Patel,B06,Lena Hoffmann,2026-04-14,26,ben.osei@mitma.com
+NH014,Maya,Rossi,Maya Rossi,Process Improvement Lead,Operations,M04,Ruth Adeyemi,B08,Fatima Al-Hassan,2026-03-31,40,maya.rossi@mitma.com
+NH015,Tom,Fitzgerald,Tom Fitzgerald,Commercial Coordinator,Commercial,M05,Mark Lim,B09,Grace O'Brien,2026-04-08,32,tom.fitzgerald@mitma.com
+NH016,Layla,Nkosi,Layla Nkosi,Brand Coordinator,Marketing,M01,James Okafor,B01,Priya Nair,2026-03-23,48,layla.nkosi@mitma.com
+NH017,Hugo,Brandt,Hugo Brandt,FP&A Analyst,Finance,M02,Clare Santos,B04,Sophie Grant,2026-03-07,64,hugo.brandt@mitma.com
+NH018,Fatou,Diallo,Fatou Diallo,Software Engineer,IT,M03,Dev Patel,B05,Kenji Tanaka,2026-03-24,47,fatou.diallo@mitma.com
+NH019,James,Wu,James Wu,Process Improvement Lead,Operations,M04,Ruth Adeyemi,B07,Carlos Rivera,2026-03-23,48,james.wu@mitma.com
+NH020,Elena,Petrova,Elena Petrova,Sales Executive,Commercial,M05,Mark Lim,B09,Grace O'Brien,2026-03-13,58,elena.petrova@mitma.com
+NH021,Kofi,Mensah,Kofi Mensah,Brand Coordinator,Marketing,M01,James Okafor,B02,Tom Walsh,2026-03-05,66,kofi.mensah@mitma.com
+NH022,Anna,Johansson,Anna Johansson,Accounts Executive,Finance,M02,Clare Santos,B04,Sophie Grant,2026-02-18,81,anna.johansson@mitma.com
+NH023,Luis,Reyes,Luis Reyes,Systems Analyst,IT,M03,Dev Patel,B06,Lena Hoffmann,2026-02-13,86,luis.reyes@mitma.com
+NH024,Hana,Suzuki,Hana Suzuki,Operations Analyst,Operations,M04,Ruth Adeyemi,B08,Fatima Al-Hassan,2026-02-14,85,hana.suzuki@mitma.com
+NH025,Patrick,Murphy,Patrick Murphy,Account Manager,Commercial,M05,Mark Lim,B09,Grace O'Brien,2026-02-21,78,patrick.murphy@mitma.com
