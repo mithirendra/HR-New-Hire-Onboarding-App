@@ -196,6 +196,8 @@ st.markdown("""
             color: white !important;
             text-decoration: none !important;
         }
+        
+      
     </style>
 """, unsafe_allow_html=True)
 
