@@ -46,6 +46,11 @@ st.markdown("""
         [data-testid="stSidebar"] {
             background-color: #ffece1;
         }
+            
+        /* Main page background */
+        [data-testid="stAppViewContainer"] {
+            background-color: #fffbf8;
+        }
         
         /* ─────────────────────────────────────────────
         Hide Streamlit default header elements
@@ -300,20 +305,16 @@ with st.sidebar:
     st.markdown(
         f"""
         <div style="
-            font-size:15px;
+            font-size:13px;
             color:#9a8880;
             text-align:center;
-            margin-bottom:4px;
+            margin-bottom:40px;
+            line-height:1.6;
         ">
-        This app is only a DEMO VERSION with limited view pages.
-        </div>
-        <div style="
-            font-size:15px;
-            color:#9a8880;
-            text-align:center;
-            margin-bottom:20px;
-        ">
-        Contact Mitma Consulting to get access to the FULL VERSION.
+        This app is only a <strong>DEMO VERSION</strong> with limited view pages.
+        <br><br>
+        Contact Mitma Consulting to get access to the <strong>FULL VERSION</strong>, 
+        which has a login page and different full views based on who logs in.
         </div>
         """,
         unsafe_allow_html=True,
