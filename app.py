@@ -1,14 +1,204 @@
 import streamlit as st
 import pandas as pd
+import base64
 from datetime import datetime
 
 st.set_page_config(
     page_title="Mitma Onboarding App",
-    page_icon="⭐",
+    page_icon="assets/mitma_favicon.png",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
 
+# ─────────────────────────────────────────────
+# GLOBAL STYLING
+# Montserrat font and demo notice styles
+# consistent across all Mitma Consulting apps
+# ─────────────────────────────────────────────
+st.markdown("""
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        /* ─────────────────────────────────────────────
+        Force Montserrat across all Streamlit elements
+        Streamlit 1.57 requires more specific selectors
+        ───────────────────────────────────────────── */
+        * {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+
+        html, body {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, div, span, label, button {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+
+        [data-testid="stMarkdownContainer"] * {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+
+        [data-testid="stSidebar"] * {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+        
+        /* ─────────────────────────────────────────────
+        Hide Streamlit default header elements
+        including the hamburger menu and
+        the Deploy button for a cleaner demo look.
+        ───────────────────────────────────────────── */
+        #MainMenu {visibility: hidden;}
+        header {visibility: hidden;}
+        footer {visibility: hidden;}
+        [data-testid="stSidebarCollapseButton"],
+        [data-testid="collapsedControl"],
+        button[aria-label="Close sidebar"],
+        button[aria-label="Open sidebar"] {
+            visibility: hidden;
+        }
+            
+        /* ─────────────────────────────────────────────
+        DEMO NOTICE STYLING
+        ───────────────────────────────────────────── */
+            
+        .demo-notice {
+            background: #ffffff;
+            border: 1px solid #f0d9cc;
+            border-radius: 12px;
+            padding: 48px 40px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        .demo-notice-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+        .demo-notice-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+        .demo-notice-text {
+            font-size: 14px;
+            color: #505050;
+            margin-bottom: 8px;
+        }
+        .demo-notice-contact {
+            font-size: 13px;
+            color: #505050;
+            margin-bottom: 24px;
+        }
+        .demo-notice-logo {
+            height: 48px;
+            margin-bottom: 24px;
+        }
+        .demo-notice-buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+        .demo-notice-btn {
+            padding: 10px 24px;
+            background: #f49052;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .demo-notice-btn:hover {
+            background: #505050;
+        }
+        .demo-notice-btn-linkedin {
+            padding: 10px 24px;
+            background: #f49052;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .demo-notice-btn-linkedin:hover {
+            background: #505050;
+        }
+        
+        /* ─────────────────────────────────────────────
+        SIDEBAR STYLING
+        Streamlit sidebar needs explicit targeting
+        as it is rendered in a separate container
+        from the main page content.
+        ───────────────────────────────────────────── */
+        [data-testid="stSidebar"] {
+            background-color: #ffece1;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        [data-testid="stSidebar"] * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        [data-testid="stSidebar"] .stRadio label {
+            font-size: 13px;
+            font-weight: 500;
+            color: #505050;
+        }
+        
+        /* ─────────────────────────────────────────────
+        LINK BUTTON STYLING
+        Targets Streamlit's native link button and
+        applies Mitma Consulting orange colour.
+        Second button targets LinkedIn blue.
+        ───────────────────────────────────────────── */
+        [data-testid="stLinkButton"] a {
+            background-color: #f49052 !important;
+            color: white !important;
+            border-radius: 8px !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 600 !important;
+            font-size: 13px !important;
+            border: none !important;
+        }
+
+        [data-testid="stLinkButton"] a:hover {
+            background-color: #505050 !important;
+            color: white !important;
+        }
+        
+        /* ─────────────────────────────────────────────
+        Fix link button font colour
+        Streamlit link buttons default to blue
+        This forces white text on all link buttons
+        ───────────────────────────────────────────── */
+        [data-testid="stLinkButton"] a {
+            color: white !important;
+            text-decoration: none !important;
+        }
+
+        [data-testid="stLinkButton"] a:hover {
+            color: white !important;
+        }
+        
+        [data-testid="stLinkButton"] > a,
+        [data-testid="stLinkButton"] > a:visited,
+        [data-testid="stLinkButton"] > a:hover,
+        [data-testid="stLinkButton"] > a:active {
+            color: white !important;
+            text-decoration: none !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# ─────────────────────────────────────────────
+# DATA LOADING
+# ─────────────────────────────────────────────
 DATA_DIR = "data/data_files"
 
 @st.cache_data
@@ -27,27 +217,138 @@ def load_data():
 hires, tasks, completion, checkins, sentiment, managers, buddies = load_data()
 
 # ─────────────────────────────────────────────
+# SIDEBAR NAVIGATION
+# Replaces login for demo version.
+# Visitor can switch between views freely.
+# Manager and HR show locked demo notice.
+# ─────────────────────────────────────────────
+
+def get_image_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+logo_base64 = get_image_base64("assets/mitma_logo.png")
+logo_src    = f"data:image/png;base64,{logo_base64}"
+
+with st.sidebar:
+    st.markdown(
+        f"""
+        <div style="
+            font-family:'Montserrat',sans-serif;
+            font-weight:700;
+            font-size:18px;
+            color:#000000;
+            text-align:center;
+            margin-bottom:4px;
+        ">
+        MITMA ONBOARDING APP
+        </div>
+        <div style="
+            font-size:12px;
+            color:#9a8880;
+            text-align:center;
+            margin-bottom:4px;
+        ">
+        BY MITMA CONSULTING
+        </div>
+        <div style="text-align:center;margin-bottom:24px;">
+            <span style="
+                font-size:10px;
+                font-weight:600;
+                background:#f49052;
+                color:white;
+                padding:2px 10px;
+                border-radius:10px;
+            ">DEMO VERSION</span>
+        </div>
+        <div style="text-align:center;margin-top:50px; margin-bottom:16px;">
+            <a href="https://mitmaconsulting.framer.ai" target="_blank">
+                <img src="{logo_src}" height="48" alt="Mitma Consulting"/>
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # Navigation radio buttons
+    # Each option maps to a view below
+    # ─────────────────────────────────────────────
+    view = st.radio(
+        "Select to Navigate View",
+        ["👤  New Hire", "👔  Manager", "🏢  HR"],
+        index=0,
+    )
+
+    st.markdown("---")
+
+    # ── Render selected view ──────────────────────────────────────
+    if view == "👤  New Hire":
+        st.markdown("### EMPLOYEE VIEW")
+
+    elif view == "👔  Manager":
+        st.markdown("### MANAGER VIEW")
+
+    elif view == "🏢  HR":
+        st.markdown("### 🏢 HR View")
+
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # Contact links
+    # ─────────────────────────────────────────────
+    st.markdown(
+        f"""
+        <div style="
+            font-size:15px;
+            color:#9a8880;
+            text-align:center;
+            margin-bottom:4px;
+        ">
+        This app is only a DEMO VERSION with limited view pages.
+        </div>
+        <div style="
+            font-size:15px;
+            color:#9a8880;
+            text-align:center;
+            margin-bottom:20px;
+        ">
+        Contact Mitma Consulting to get access to the FULL VERSION.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.link_button("Contact Mitma Consulting →", "https://mitmaconsulting.framer.ai", use_container_width=True)
+    st.link_button("Connect on LinkedIn →", "https://www.linkedin.com/in/mithirendra-maniam/", use_container_width=True)
+
+    st.markdown("---")
+
+# ─────────────────────────────────────────────
 # MAIN APP — only renders if user is logged in
 # We check the user role and render the correct
 # view. We start with the New Hire view.
 # ─────────────────────────────────────────────
 
-view = st.selectbox(
-    "Select View",
-    ["New Hire", "Manager", "HR"]
-)
+# ─────────────────────────────────────────────
+# NEW HIRE VIEW
+# ─────────────────────────────────────────────
 
-st.markdown("---")
+if view == "👤  New Hire":
 
-if view == "New Hire":
+    st.markdown("## New Hire View - Onboarding Journey")
 
     # New hire selector only shows in New Hire view
     selected_name = st.selectbox(
-        "Select New Hire",
+        "Select New Hire to get personalised view",
         hires["full_name"].tolist()
     )
-    
-    # Hardcode a new hire for Ver 0 demo
+
+
+    st.markdown("---")
+
+        # Hardcode a new hire for Ver 0 demo
     # Ver 1 will use login to select the correct hire
     hire = hires[hires["full_name"] == selected_name].iloc[0]
 
@@ -388,59 +689,436 @@ if view == "New Hire":
 # Full build in Ver 1
 # ─────────────────────────────────────────────
 
-elif view == "Manager":
-    st.markdown("## Manager View")
+elif view == "👔  Manager":
+    
+    st.markdown("## Manager View - Overall Team Progress")
     st.markdown(
         """
         <div style="
-            background:#ffffff;
-            border:1px solid #f0d9cc;
-            border-radius:10px;
-            padding:40px;
-            text-align:center;
+            background:#ffece1;
+            border-left:4px solid #f49052;
+            border-radius:6px;
+            padding:10px 16px;
+            font-size:13px;
+            color:#505050;
+            margin-bottom:24px;
         ">
-            <div style="font-size:48px">🚧</div>
-            <div style="font-size:20px;font-weight:600;margin-top:16px">Coming Soon</div>
-            <div style="font-size:14px;color:#9a8880;margin-top:8px">
-                The Manager view is currently in development.<br>
-                It will include new hire progress tracking, manager 
-                checklists, 1-on-1 prompts and sentiment signals.
-            </div>
+        👀 <strong>Demo Preview</strong> · You are viewing a sample of the Manager view. 
+        Some sections are available in the Full Version only.
         </div>
         """,
         unsafe_allow_html=True,
     )
 
-elif view == "HR":
-    st.markdown("## HR View")
+    # ─────────────────────────────────────────────
+    # Manager selector dropdown
+    # Allows demo visitor to switch between managers
+    # and see different data — same pattern as the
+    # new hire selector in the New Hire view
+    # ─────────────────────────────────────────────
+    selected_manager = st.selectbox(
+        "Select Manager to get personalised view",
+        managers["name"].tolist()
+    )
+
+    # Filter hires to the selected manager
+    my_hires = hires[hires["manager_name"] == selected_manager].copy()
+
+    # Calculate days employed for each hire
+    my_hires["days_employed"] = my_hires["start_date"].apply(
+        lambda x: max(0, (datetime.today() - datetime.strptime(x, "%Y-%m-%d")).days)
+    )
+
+    # Get manager department
+    manager_dept = managers[managers["name"] == selected_manager].iloc[0]["department"]
+
+    st.markdown(f"**{manager_dept} · {len(my_hires)} active new hires**")
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # STATS ROW
+    # ─────────────────────────────────────────────
+    total_tasks = completion[
+        (completion["hire_id"].isin(my_hires["hire_id"])) &
+        (completion["assigned_to"] == "new_hire") &
+        (completion["status"] != "upcoming")
+    ]
+    complete_tasks = total_tasks[total_tasks["status"] == "complete"]
+    overdue_tasks  = total_tasks[total_tasks["status"] == "overdue"]
+
+    avg_completion = int(
+        len(complete_tasks) / len(total_tasks) * 100
+    ) if len(total_tasks) > 0 else 0
+
+    my_sentiment  = checkins[checkins["hire_id"].isin(my_hires["hire_id"])]
+    avg_sentiment = round(my_sentiment["score"].mean(), 1) if len(my_sentiment) > 0 else 0
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px 20px;">
+                <div style="font-size:32px;font-weight:700;color:#000000">{len(my_hires)}</div>
+                <div style="font-size:11px;color:#9a8880;margin-top:4px">Active New Hires</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px 20px;">
+                <div style="font-size:32px;font-weight:700;color:#f49052">{avg_completion}%</div>
+                <div style="font-size:11px;color:#9a8880;margin-top:4px">Avg Task Completion</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px 20px;">
+                <div style="font-size:32px;font-weight:700;color:#d4703a">{len(overdue_tasks)}</div>
+                <div style="font-size:11px;color:#9a8880;margin-top:4px">Overdue Tasks</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    with col4:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px 20px;">
+                <div style="font-size:32px;font-weight:700;color:#3a8c5c">{avg_sentiment}</div>
+                <div style="font-size:11px;color:#9a8880;margin-top:4px">Avg Sentiment Score</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("")
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # NEW HIRE PROGRESS TRACKER
+    # ─────────────────────────────────────────────
+    st.markdown("### New Hire Progress")
+
+    for _, h in my_hires.iterrows():
+
+        hire_tasks = completion[
+            (completion["hire_id"] == h["hire_id"]) &
+            (completion["assigned_to"] == "new_hire") &
+            (completion["status"] != "upcoming")
+        ]
+
+        h_complete = len(hire_tasks[hire_tasks["status"] == "complete"])
+        h_overdue  = len(hire_tasks[hire_tasks["status"] == "overdue"])
+        h_total    = len(hire_tasks)
+        h_pct      = int(h_complete / h_total * 100) if h_total > 0 else 0
+
+        if h_overdue > 0:
+            tag    = "⚠️ Overdue tasks"
+            colour = "#d4703a"
+        elif h_pct >= 80:
+            tag    = "🚀 Ahead"
+            colour = "#3a8c5c"
+        else:
+            tag    = "✅ On track"
+            colour = "#f49052"
+
+        col1, col2, col3 = st.columns([3, 4, 2])
+
+        with col1:
+            initials = h["first_name"][0] + h["last_name"][0]
+            st.markdown(
+                f"""
+                <div style="display:flex;align-items:center;gap:12px;padding:8px 0;">
+                    <div style="
+                        width:40px;height:40px;border-radius:50%;
+                        background:#f49052;color:white;
+                        font-weight:600;font-size:14px;
+                        display:flex;align-items:center;justify-content:center;
+                        flex-shrink:0;
+                    ">{initials}</div>
+                    <div>
+                        <div style="font-weight:600;font-size:13px">{h['full_name']}</div>
+                        <div style="font-size:11px;color:#9a8880">{h['role']} · Day {h['days_employed']}</div>
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+        with col2:
+            st.markdown("")
+            st.progress(h_pct / 100)
+            st.markdown(
+                f"<div style='font-size:11px;color:#9a8880'>{h_complete} of {h_total} tasks complete</div>",
+                unsafe_allow_html=True,
+            )
+
+        with col3:
+            st.markdown("")
+            st.markdown(
+                f"<div style='font-size:12px;color:{colour};font-weight:500;padding-top:8px'>{tag}</div>",
+                unsafe_allow_html=True,
+            )
+
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # LOCKED SECTIONS — demo notice
+    # Manager checklist, 1-on-1 prompts and
+    # sentiment tracker are Full Version only
+    # ─────────────────────────────────────────────
+    st.markdown("### Manager Checklist · 1-on-1 Prompts · Sentiment Tracker")
+
     st.markdown(
         """
-        <div style="
-            background:#ffffff;
-            border:1px solid #f0d9cc;
-            border-radius:10px;
-            padding:40px;
-            text-align:center;
-        ">
-            <div style="font-size:48px">🚧</div>
-            <div style="font-size:20px;font-weight:600;margin-top:16px">Coming Soon</div>
-            <div style="font-size:14px;color:#9a8880;margin-top:8px">
-                The HR view is currently in development.<br>
-                It will include all hires dashboard, completion rates,
-                bottleneck alerts and manager compliance tracking.
-            </div>
+        <div class="demo-notice">
+            <div class="demo-notice-icon">🔒</div>
+            <h3 class="demo-notice-title">Full Version Only</h3>
+            <p class="demo-notice-text">Manager Checklist, 1-on-1 Conversation Prompts and Sentiment Tracker are available in the Full Version.</p>
+            <p class="demo-notice-contact">Contact Mitma Consulting to get access to the Full Version.</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
 
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown(
+            f"""
+            <div style="text-align:center;margin-top:50px; margin-bottom:16px;">
+                <a href="https://mitmaconsulting.framer.ai" target="_blank">
+                    <img src="{logo_src}" height="48" alt="Mitma Consulting"/>
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        _, btn1, btn2, _ = st.columns([0.5, 2, 2, 0.5])
+        with btn1:
+            st.link_button("Contact Mitma Consulting →", "https://mitmaconsulting.framer.ai/contact", use_container_width=True)
+        with btn2:
+            st.link_button("Connect on LinkedIn →", "https://www.linkedin.com/in/mithirendra-maniam/", use_container_width=True)
+
+# ─────────────────────────────────────────────
+# HR VIEW — Demo locked page
+# ─────────────────────────────────────────────
+elif view == "🏢  HR":
+
+    st.markdown("## HR View - Overall Company Onboarding")
+
+    st.markdown(
+        """
+        <div style="
+            background:#ffece1;
+            border-left:4px solid #f49052;
+            border-radius:6px;
+            padding:10px 16px;
+            font-size:13px;
+            color:#505050;
+            margin-bottom:24px;
+        ">
+        👀 <strong>Demo Preview</strong> · You are viewing a sample of the HR view. 
+        Some sections are available in the Full Version only.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(f"**All Departments · {len(hires)} active new hires**")
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # STATS ROW
+    # 5 key metrics across all new hires and
+    # all departments in the organisation
+    # ─────────────────────────────────────────────
+    all_tasks = completion[
+        (completion["assigned_to"] == "new_hire") &
+        (completion["status"] != "upcoming")
+    ]
+
+    all_complete = len(all_tasks[all_tasks["status"] == "complete"])
+    all_overdue  = len(all_tasks[all_tasks["status"] == "overdue"])
+    all_total    = len(all_tasks)
+
+    overall_completion = int(
+        all_complete / all_total * 100
+    ) if all_total > 0 else 0
+
+    avg_satisfaction = round(checkins["score"].mean(), 1) if len(checkins) > 0 else 0
+
+    active_hires = hires[hires["days_employed"] > 0]
+    avg_days     = int(active_hires["days_employed"].mean()) if len(active_hires) > 0 else 0
+
+    col1, col2, col3, col4, col5 = st.columns(5)
+
+    with col1:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px;">
+                <div style="font-size:28px;font-weight:700;color:#000000">{len(hires)}</div>
+                <div style="font-size:10px;color:#9a8880;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em">Active New Hires</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px;">
+                <div style="font-size:28px;font-weight:700;color:#3a8c5c">{overall_completion}%</div>
+                <div style="font-size:10px;color:#9a8880;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em">Avg Completion Rate</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px;">
+                <div style="font-size:28px;font-weight:700;color:#000000">{avg_days}d</div>
+                <div style="font-size:10px;color:#9a8880;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em">Avg Days Employed</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    with col4:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px;">
+                <div style="font-size:28px;font-weight:700;color:#f49052">{avg_satisfaction}</div>
+                <div style="font-size:10px;color:#9a8880;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em">Avg Satisfaction Score</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    with col5:
+        st.markdown(
+            f"""
+            <div style="background:#ffffff;border:1px solid #f0d9cc;
+                border-radius:12px;padding:16px;">
+                <div style="font-size:28px;font-weight:700;color:#d4703a">{all_overdue}</div>
+                <div style="font-size:10px;color:#9a8880;margin-top:4px;text-transform:uppercase;letter-spacing:0.06em">Overdue Tasks</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("")
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # COMPLETION RATE BY DEPARTMENT
+    # ─────────────────────────────────────────────
+    st.markdown("### Completion Rate by Department")
+
+    dept_completion = completion[
+        (completion["assigned_to"] == "new_hire") &
+        (completion["status"] != "upcoming")
+    ].merge(
+        hires[["hire_id", "department"]],
+        on="hire_id", how="left"
+    )
+
+    dept_stats = dept_completion.groupby("department").apply(
+        lambda x: round(len(x[x["status"] == "complete"]) / len(x) * 100, 1)
+    ).reset_index()
+    dept_stats.columns = ["department", "completion_rate"]
+
+    dept_hire_count = hires.groupby("department").size().reset_index()
+    dept_hire_count.columns = ["department", "hire_count"]
+
+    dept_stats = dept_stats.merge(dept_hire_count, on="department", how="left")
+    dept_stats = dept_stats.sort_values("completion_rate", ascending=False)
+
+    for _, row in dept_stats.iterrows():
+
+        if row["completion_rate"] >= 75:
+            colour = "#3a8c5c"
+        elif row["completion_rate"] >= 50:
+            colour = "#c9861a"
+        else:
+            colour = "#d4703a"
+
+        col1, col2, col3 = st.columns([2, 5, 1])
+
+        with col1:
+            st.markdown(
+                f"""
+                <div style="padding:8px 0;">
+                    <div style="font-weight:600;font-size:13px">{row['department']}</div>
+                    <div style="font-size:11px;color:#9a8880">{row['hire_count']} new hires</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+        with col2:
+            st.markdown("")
+            st.progress(row["completion_rate"] / 100)
+
+        with col3:
+            st.markdown(
+                f"""
+                <div style="padding-top:8px;text-align:right;">
+                    <div style="font-size:16px;font-weight:700;color:{colour}">{row['completion_rate']}%</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+    st.markdown("---")
+
+    # ─────────────────────────────────────────────
+    # LOCKED SECTIONS — demo notice
+    # Bottleneck alerts, satisfaction score and
+    # manager compliance are Full Version only
+    # ─────────────────────────────────────────────
+    st.markdown("### Bottleneck Alerts · Satisfaction Score · Manager Compliance")
+
+    st.markdown(
+        """
+        <div class="demo-notice">
+            <div class="demo-notice-icon">🔒</div>
+            <h3 class="demo-notice-title">Full Version Only</h3>
+            <p class="demo-notice-text">Bottleneck Alerts, Satisfaction Score and Manager Compliance are available in the Full Version.</p>
+            <p class="demo-notice-contact">Contact Mitma Consulting to get access to the Full Version.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown(
+            f"""
+            <div style="text-align:center;margin-top:50px; margin-bottom:16px;">
+                <a href="https://mitmaconsulting.framer.ai" target="_blank">
+                    <img src="{logo_src}" height="48" alt="Mitma Consulting"/>
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        _, btn1, btn2, _ = st.columns([0.5, 2, 2, 0.5])
+        with btn1:
+            st.link_button("Contact Mitma Consulting →", "https://mitmaconsulting.framer.ai/contact", use_container_width=True)
+        with btn2:
+            st.link_button("Connect on LinkedIn →", "https://www.linkedin.com/in/mithirendra-maniam/", use_container_width=True)
+
+# ─────────────────────────────────────────────
+# FOOTER
+# ─────────────────────────────────────────────
 # Show footer
 st.markdown("""
-<div style='text-align:center; padding:20px 0 10px;
-            font-size:11px; color:#c0a080;
+<div style='text-align:center;padding:20px 0 10px;
+            font-size:11px;color:#c0a080;
             border-top:0.5px solid #f0d0b8;
-            margin-top:40px;'>
-    © 2026 Mitma Consulting · Mitma Onboarding App Version 0·
+            margin-top:40px;
+            font-family:Montserrat,sans-serif;'>
+    © 2026 Mitma Consulting · Mitma Onboarding App Demo Version 0 ·
     Built by Mithirendra Maniam
 </div>
 """, unsafe_allow_html=True)
