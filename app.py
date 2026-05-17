@@ -4,7 +4,7 @@ import base64
 from datetime import datetime
 
 st.set_page_config(
-    page_title="Mitma Onboarding App",
+    page_title="Mitma Onboarding App | Mitma Consulting",
     page_icon="assets/mitma_favicon.png",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -42,6 +42,10 @@ st.markdown("""
         [data-testid="stSidebar"] * {
             font-family: 'Montserrat', sans-serif !important;
         }
+            
+        [data-testid="stSidebar"] {
+            background-color: #ffece1;
+        }
         
         /* ─────────────────────────────────────────────
         Hide Streamlit default header elements
@@ -49,15 +53,9 @@ st.markdown("""
         the Deploy button for a cleaner demo look.
         ───────────────────────────────────────────── */
         #MainMenu {visibility: hidden;}
-        header {visibility: hidden;}
         footer {visibility: hidden;}
-        [data-testid="stSidebarCollapseButton"],
-        [data-testid="collapsedControl"],
-        button[aria-label="Close sidebar"],
-        button[aria-label="Open sidebar"] {
-            visibility: hidden;
-        }
-            
+        [data-testid="stSidebarCollapseButton"] {display: none;}
+                            
         /* ─────────────────────────────────────────────
         DEMO NOTICE STYLING
         ───────────────────────────────────────────── */
