@@ -364,6 +364,72 @@ if view == "👤  New Hire":
     st.markdown(f"📅 Day **{days_employed}** of 90")
     st.markdown("---")
 
+    # ── Welcome Message ──
+    # A personal welcome from leadership sets the tone
+    # for the new hire's first experience with the company.
+    # Synthetic data used for proof of concept.
+    # In Ver 1 this would be customised per company.
+
+    st.markdown(
+        f"""
+        <div id="welcome-block" style="
+            background:#ffffff;
+            border:1px solid #f0d9cc;
+            border-radius:12px;
+            padding:32px 36px;
+            margin-bottom:24px;
+        ">
+            <p style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#9a8880;margin-bottom:12px;">Welcome to Mitma</p>
+            <p style="font-size:22px;font-weight:700;color:#000000;margin-bottom:16px;line-height:1.3;">We are thrilled to have you, {hire['first_name']}.</p>
+            <p style="font-size:14px;color:#505050;line-height:1.8;margin-bottom:20px;">Starting a new role is one of the most exciting — and sometimes daunting — experiences in a career. We want you to know that everyone here is rooting for you.<br><br>Take it one step at a time. Ask questions. Get to know your team. Welcome aboard.</p>
+            <p style="font-size:13px;font-weight:600;color:#f49052;">Ir. Mithirendra Maniam<br><span style="font-weight:400;color:#9a8880;font-size:12px;">Founder and Chief Executive Officer · Mitma Consulting</span></p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("---")
+
+    # ── Company Values ──
+    # Short value cards showing company mission and values.
+    # Makes the culture tangible from day one.
+    # In Ver 1 these would be customised per company.
+
+    st.markdown("### Our Values")
+
+    values = [
+        {"icon": "🤝", "title": "People First",      "desc": "We put our people — employees and clients — at the centre of every decision we make."},
+        {"icon": "💡", "title": "Curiosity",          "desc": "We ask questions, challenge assumptions and never stop learning."},
+        {"icon": "🎯", "title": "Ownership",          "desc": "We take responsibility for our work, our mistakes and our growth."},
+        {"icon": "🌍", "title": "Inclusion",          "desc": "We build a workplace where every voice is heard and every person belongs."},
+    ]
+
+    cols = st.columns(4)
+
+    for col, value in zip(cols, values):
+        with col:
+            st.markdown(
+                f"""
+                <div style="
+                    background:#ffffff;
+                    border:1px solid #f0d9cc;
+                    border-radius:12px;
+                    padding:20px;
+                    text-align:center;
+                    height:100%;
+                ">
+                    <div style="font-size:32px;margin-bottom:12px;">{value['icon']}</div>
+                    <div style="font-weight:700;font-size:14px;color:#000000;
+                                margin-bottom:8px;">{value['title']}</div>
+                    <div style="font-size:12px;color:#9a8880;line-height:1.6;">
+                        {value['desc']}
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+    st.markdown("---")
 
     # ── Journey Map ──
     # Shows the 5 phases of the onboarding journey
@@ -503,6 +569,7 @@ if view == "👤  New Hire":
             font-size:12px;
             color:#9a8880;
         ">
+        Task Legend:&nbsp;&nbsp;&nbsp;
         ✅ &nbsp; Complete &nbsp;&nbsp;&nbsp;
         🔴 &nbsp; Overdue &nbsp;&nbsp;&nbsp;
         🟡 &nbsp; Pending &nbsp;&nbsp;&nbsp;
@@ -511,6 +578,88 @@ if view == "👤  New Hire":
         """,
         unsafe_allow_html=True,
     )
+
+    st.markdown("---")
+
+    # ── 30/60/90 Day Goals ──
+    # Shows the new hire what is expected of them
+    # in each phase of their journey.
+    # Tied to the journey map phases above.
+    # Gives clarity on what success looks like.
+
+    st.markdown("### Your 30 · 60 · 90 Day Goals")
+
+    goals = [
+        {
+            "phase":  "First 30 Days",
+            "colour": "#f49052",
+            "icon":   "🌱",
+            "focus":  "Learn & Settle In",
+            "goals":  [
+                "Understand your role, team and immediate priorities",
+                "Complete all onboarding tasks and compliance training",
+                "Build relationships with your manager, buddy and team",
+                "Get familiar with the tools, systems and workflows",
+                "Ask questions — there are no silly ones in your first month",
+            ]
+        },
+        {
+            "phase":  "First 60 Days",
+            "colour": "#c9861a",
+            "icon":   "🚀",
+            "focus":  "Contribute & Connect",
+            "goals":  [
+                "Begin contributing to team projects and deliverables",
+                "Develop a clear understanding of your KPIs and targets",
+                "Build relationships beyond your immediate team",
+                "Identify one area where you can add immediate value",
+                "Share early observations and ideas with your manager",
+            ]
+        },
+        {
+            "phase":  "First 90 Days",
+            "colour": "#3a8c5c",
+            "icon":   "🎯",
+            "focus":  "Own & Deliver",
+            "goals":  [
+                "Independently own and deliver a piece of work",
+                "Complete your 90-day review with your manager",
+                "Set goals for the next 6 months",
+                "Be a resource for the next new hire who joins",
+                "Feel confident, settled and excited about what comes next",
+            ]
+        },
+    ]
+
+    for goal in goals:
+        st.markdown(
+            f"""
+            <div style="
+                background:#ffffff;
+                border:1px solid #f0d9cc;
+                border-left:4px solid {goal['colour']};
+                border-radius:12px;
+                padding:20px 24px;
+                margin-bottom:16px;
+            ">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+                    <div style="font-size:24px;">{goal['icon']}</div>
+                    <div>
+                        <div style="font-weight:700;font-size:15px;color:#000000;">
+                            {goal['phase']}
+                        </div>
+                        <div style="font-size:12px;color:{goal['colour']};font-weight:600;">
+                            {goal['focus']}
+                        </div>
+                    </div>
+                </div>
+                <ul style="margin:0;padding-left:20px;color:#505050;font-size:13px;line-height:1.8;">
+                    {''.join([f"<li>{g}</li>" for g in goal['goals']])}
+                </ul>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
     st.markdown("---")
 
@@ -621,6 +770,150 @@ if view == "👤  New Hire":
                 """,
                 unsafe_allow_html=True,
             )
+
+    st.markdown("---")
+
+    # ── Upcoming Events ──
+    # Shows upcoming team events, all-hands and socials.
+    # Makes the company feel alive and welcoming.
+    # In Ver 1 this would connect to a calendar feed.
+    # Synthetic data used for proof of concept.
+
+    st.markdown("### Upcoming Events")
+
+    events = [
+        {
+            "date":  "20 May 2026",
+            "day":   "Wed",
+            "title": "All-Hands Meeting",
+            "desc":  "Company-wide quarterly update from leadership.",
+            "type":  "Company",
+            "colour": "#f49052",
+        },
+        {
+            "date":  "23 May 2026",
+            "day":   "Sat",
+            "title": "Team Social — Bowling Night",
+            "desc":  "A casual evening out with the team. Partners welcome.",
+            "type":  "Social",
+            "colour": "#3a8c5c",
+        },
+        {
+            "date":  "28 May 2026",
+            "day":   "Thu",
+            "title": "New Hire Lunch",
+            "desc":  "Lunch with all new hires who joined this month.",
+            "type":  "New Hire",
+            "colour": "#c9861a",
+        },
+        {
+            "date":  "3 Jun 2026",
+            "day":   "Wed",
+            "title": "Department Town Hall",
+            "desc":  "Monthly department update and Q&A session.",
+            "type":  "Department",
+            "colour": "#7b6ea7",
+        },
+    ]
+
+    for event in events:
+        st.markdown(
+            f"""
+            <div style="
+                background:#ffffff;
+                border:1px solid #f0d9cc;
+                border-radius:12px;
+                padding:16px 20px;
+                margin-bottom:12px;
+                display:flex;
+                align-items:center;
+                gap:20px;
+            ">
+                <div style="
+                    background:{event['colour']}22;
+                    border-radius:10px;
+                    padding:10px 14px;
+                    text-align:center;
+                    min-width:60px;
+                    flex-shrink:0;
+                ">
+                    <div style="font-size:10px;color:{event['colour']};
+                                font-weight:600;text-transform:uppercase;
+                                letter-spacing:0.08em;">{event['day']}</div>
+                    <div style="font-size:18px;font-weight:700;
+                                color:{event['colour']};line-height:1.2;">
+                        {event['date'].split()[0]}
+                    </div>
+                    <div style="font-size:10px;color:{event['colour']};">
+                        {' '.join(event['date'].split()[1:])}
+                    </div>
+                </div>
+                <div style="flex:1;">
+                    <div style="font-weight:600;font-size:13px;
+                                color:#000000;margin-bottom:4px;">
+                        {event['title']}
+                    </div>
+                    <div style="font-size:12px;color:#9a8880;">
+                        {event['desc']}
+                    </div>
+                </div>
+                <div style="
+                    background:{event['colour']}22;
+                    color:{event['colour']};
+                    font-size:10px;
+                    font-weight:600;
+                    padding:4px 10px;
+                    border-radius:20px;
+                    flex-shrink:0;
+                ">{event['type']}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    st.markdown("---")
+
+    # ── Locked Sections — Demo Notice ──
+    # Training curriculum, Day 1 content, Quick Links,
+    # ERG and FAQ are Full Version only.
+
+    st.markdown("### Key Contacts · Training · Day 1 Guide · Resources · ERGs · FAQ")
+
+    st.markdown(
+        """
+        <div class="demo-notice">
+            <div class="demo-notice-icon">🔒</div>
+            <h3 class="demo-notice-title">Full Version Only</h3>
+            <p class="demo-notice-text">
+                Key Contacts, Training Curriculum, Day 1 Onboarding Guide, Quick Links, 
+                Employee Resource Groups and FAQ are available in the 
+                Full Version of the Mitma Onboarding App.
+            </p>
+            <p class="demo-notice-contact">
+                Contact Mitma Consulting to get access to the Full Version.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown(
+            f"""
+            <div style="text-align:center;margin-bottom:16px;">
+                <a href="https://mitmaconsulting.framer.ai" target="_blank">
+                    <img src="{logo_src}" height="48" alt="Mitma Consulting"/>
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        _, btn1, btn2, _ = st.columns([0.5, 2, 2, 0.5])
+        with btn1:
+            st.link_button("Contact Mitma →", "YOUR_CONTACT_URL", use_container_width=True)
+        with btn2:
+            st.link_button("Connect on LinkedIn →", "YOUR_LINKEDIN_URL", use_container_width=True)
 
     st.markdown("---")
 
